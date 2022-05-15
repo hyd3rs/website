@@ -15,6 +15,7 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Projects', href: '/projects', current: false, disabled: false },
   { name: 'Professional', href: '/credentials', current: false, disabled: false, external: false },
+  { name: "Blog", href: "https://corner.danny.works/", current: false, disabled: false, external: true }
   // { name: '#SaveUkraine *COMING SOON*', href: '/ukraine', current: false, disabled: true, external: false },
 ];
 
