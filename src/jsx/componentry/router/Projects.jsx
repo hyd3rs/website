@@ -7,8 +7,24 @@ export default function Projects() {
                 <h1 className="PageBanner" style={{ zIndex: "1" }}>Projects</h1>
             </div>
             <div className="flex gap-y-6 flex-col py-12 h-screen items-center bg-gray-900 text-center">
-                <h2 className="Tagline">A few projects and small software utilities of mine. Some are big, some are small.</h2>
+                <h2 className="Tagline">A collection of my most active or my best projects. Some are relatively small, whilst others are reasonably large.</h2>
                 <div className="py-6 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <ProjectCard>
+                        <ProjectCard.Title>Hydrabank</ProjectCard.Title>
+
+                        <ProjectCard.Description>
+                            We can handle your web application development and systems infrastructure management. That way, you can focus on what you do best - running your own business.
+                        </ProjectCard.Description>
+
+                        <ProjectCard.Link>https://hydrabank.systems</ProjectCard.Link>
+
+                        <ProjectCard.Image>/assets/img/projects/hydrabank.png</ProjectCard.Image>
+
+                        <ProjectCard.ImageDescription>Hydrabank wave</ProjectCard.ImageDescription>
+                        
+                        <ProjectCard.ButtonText>Website</ProjectCard.ButtonText>
+                    </ProjectCard>
+
                     <ProjectCard>
                         <ProjectCard.Title>Songfish</ProjectCard.Title>
 
@@ -55,38 +71,6 @@ export default function Projects() {
                         <ProjectCard.ImageDescription>A breeze in the wind.</ProjectCard.ImageDescription>
                         
                         <ProjectCard.ButtonText>Repository</ProjectCard.ButtonText>
-                    </ProjectCard>
-
-                    <ProjectCard>
-                        <ProjectCard.Title>RavenGuard</ProjectCard.Title>
-                        
-                        <ProjectCard.Description>
-                            Protect your Minecraft servers and websites from the worst of attacks. <b>Coming soon.</b>
-                        </ProjectCard.Description>
-
-                        <ProjectCard.Link>https://ravenguard.space</ProjectCard.Link>
-
-                        <ProjectCard.Image>/assets/img/projects/ravenguard.png</ProjectCard.Image>
-
-                        <ProjectCard.ImageDescription>RavenGuard</ProjectCard.ImageDescription>
-
-                        <ProjectCard.ButtonText>Website</ProjectCard.ButtonText>
-                    </ProjectCard>
-
-                    <ProjectCard>
-                        <ProjectCard.Title>Nexus</ProjectCard.Title>
-
-                        <ProjectCard.Description>
-                            A CMS solution for blogs and Minecraft servers. Partially incomplete.
-                        </ProjectCard.Description>
-
-                        <ProjectCard.Link>https://github.com/Dannnington/Fission</ProjectCard.Link>
-
-                        <ProjectCard.Image>/assets/img/projects/fission.png</ProjectCard.Image>
-
-                        <ProjectCard.ImageDescription>A screenshot of Fission's UI</ProjectCard.ImageDescription>
-
-                        <ProjectCard.ButtonText>Fission Repository</ProjectCard.ButtonText>
                     </ProjectCard>
                 </div>
             </div>

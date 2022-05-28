@@ -51,7 +51,7 @@ export default function Nav() {
   return (
     <div>
       {/* START EVENT BANNER */}
-        <div className="flex flex-row py-5 px-5 items-center justify-center text-white" style={{ background: "#00356f" }}>
+        <div className={`${null/*flex*/} flex-row py-5 px-5 items-center justify-center text-white hidden`} style={{ background: "#00356f" }}>
           <div className="px-5">
             <FlagIcon code="UA" className="rounded-md w-48 sm:w-20" />
           </div>
