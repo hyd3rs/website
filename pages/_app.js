@@ -2,6 +2,10 @@ import '/styles/globals.css';
 import Head from '/components/Root/Head';
 import Body from '/components/Root/Body';
 
+import '@fortawesome/fontawesome-svg-core/styles.css';
+import { config } from '@fortawesome/fontawesome-svg-core';
+config.autoAddCss = false;
+
 /* NProgress */
 import 'nprogress/nprogress.css';
 import NProgress from 'nprogress';

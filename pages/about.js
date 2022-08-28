@@ -22,7 +22,7 @@ export default function Portfolio() {
                     However, as a web developer, I mostly work with JavaScript/TypeScript and frameworks like {" "}
                     <Link href="https://reactjs.org">
                         <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
-                            <FontAwesomeIcon icon={faReact} /> React
+                            <FontAwesomeIcon icon={faReact} className="w-5" /> React
                         </a>
                     </Link>.
                     In fact, this very website that you&apos;re on <b>right now</b> was built with Next.js, a React-based framework!
@@ -78,13 +78,13 @@ export default function Portfolio() {
                     For other commissions (e.g. confidential UI design, video editing), business enquiries, or if you just want to say hello - you can reach me at{" "}
                     <Link href={links.email}>
                         <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
-                            <FontAwesomeIcon icon={faEnvelope} /> hello@danny.works
+                            <FontAwesomeIcon icon={faEnvelope} className="w-5" /> hello@danny.works
                         </a>
                     </Link>.
                     You can also reach me via <br />
                     <Link href={links.discord}>
                         <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
-                            <FontAwesomeIcon icon={faDiscord} /> Discord
+                            <FontAwesomeIcon icon={faDiscord} className="w-5" /> Discord
                         </a>
                     </Link> if you need live communication.
 
