@@ -21,7 +21,7 @@ export default function Portfolio() {
                     In terms of my design and development expertise, I work on a variety of projects with many technologies. 
                     However, as a web developer, I mostly work with JavaScript/TypeScript and frameworks like {" "}
                     <Link href="https://reactjs.org">
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faReact} className="w-5" /> React
                         </a>
                     </Link>.
@@ -68,7 +68,7 @@ export default function Portfolio() {
                     If you would like to contact me regarding a potential web design commission, backend project, or a systems administration gig, you should see the
                     {" "}
                     <Link href="https://hydrabank.systems">
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             Hydrabank
                         </a>
                     </Link>
@@ -77,13 +77,14 @@ export default function Portfolio() {
                     <br /> <br />
                     For other commissions (e.g. confidential UI design, video editing), business enquiries, or if you just want to say hello - you can reach me at{" "}
                     <Link href={links.email}>
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faEnvelope} className="w-5" /> hello@danny.works
                         </a>
                     </Link>.
-                    You can also reach me via <br />
+                    You can also reach me via
+                    {" "}
                     <Link href={links.discord}>
-                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400"> 
+                        <a target="_blank" rel="noreferrer noopener" className="text-blue-400 hover:text-blue-500 transition ease-in-out duration-250 bg-slate-900"> 
                             <FontAwesomeIcon icon={faDiscord} className="w-5" /> Discord
                         </a>
                     </Link> if you need live communication.
