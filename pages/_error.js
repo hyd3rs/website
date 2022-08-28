@@ -15,7 +15,7 @@ function Error({ statusCode }) {
             <Link href="/">
                 <a className={`
                     text-gray-100 hover:bg-slate-800 font-AegixHeader font-bold text-lg px-4 py-2 rounded-xl
-                    transition ease-in-out duration-500 bg-slate-900
+                    transition ease-in-out duration-250 bg-slate-900
                     flex-row items-center gap-x-2 text-center
                     flex
                 `}>

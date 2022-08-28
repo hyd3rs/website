@@ -87,7 +87,7 @@ export default function Head() {
                                                                 ${router.pathname === path ? 'bg-slate-800' : 'hover:bg-slate-700'} 
                                                                 ${router.pathname === "/_error" ? "bg-slate-900 hover:bg-slate-800" : ""} 
                                                                 text-gray-100 font-AegixHeader font-bold text-lg px-4 py-2 rounded-xl
-                                                                transition ease-in-out duration-500
+                                                                transition ease-in-out duration-250
                                                                 hidden sm:flex flex-row items-center gap-x-2
                                                             `}>
                                                                 <FontAwesomeIcon icon={faArrowLeft} />
@@ -99,7 +99,7 @@ export default function Head() {
                                                             ${router.pathname === path ? 'bg-slate-800' : 'hover:bg-slate-800'} 
                                                             ${router.pathname === "/_error" ? "hover:bg-slate-900" : ""} 
                                                             text-gray-100 font-AegixHeader font-bold text-lg px-4 py-2 rounded-xl
-                                                            transition ease-in-out duration-500 disabled:cursor-not-allowed
+                                                            transition ease-in-out duration-250 disabled:cursor-not-allowed
                                                             hidden
                                                         `} disabled>
                                                             {title}
@@ -113,7 +113,7 @@ export default function Head() {
                                                     ${router.pathname === path ? 'bg-slate-800' : 'hover:bg-slate-800'} 
                                                     ${router.pathname === "/_error" ? "hover:bg-slate-900" : ""} 
                                                     text-gray-100 font-AegixHeader font-bold text-lg px-4 py-2 rounded-xl
-                                                    transition ease-in-out duration-500
+                                                    transition ease-in-out duration-250
                                                 `}>
                                                     {title}
                                                 </a>

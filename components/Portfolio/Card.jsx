@@ -17,7 +17,7 @@ export default function Card(props) {
                             {
                                 (props.repository?.type === "github" && props.repository?.href) && (
                                     <Link href={props.repository?.href}>
-                                        <a target="_blank" rel="noreferrer noopener" className="text-lg lg:text-2xl hover:text-gray-300 transition ease-in-out duration-500">
+                                        <a target="_blank" rel="noreferrer noopener" className="text-lg lg:text-2xl hover:text-gray-300 transition ease-in-out duration-250">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Link>
@@ -25,7 +25,7 @@ export default function Card(props) {
                             }
                             {
                                 (props.repository?.type === "github" && !props.repository?.href) && (
-                                    <div className="text-lg lg:text-2xl hover:text-gray-300 hover:cursor-not-allowed transition ease-in-out duration-500">
+                                    <div className="text-lg lg:text-2xl hover:text-gray-300 hover:cursor-not-allowed transition ease-in-out duration-250">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </div>
                                 )
@@ -34,7 +34,7 @@ export default function Card(props) {
                                 (
                                     (props.repository?.type === "gitlab" && props.repository?.href) && (
                                         <Link href={props.repository?.href}>
-                                            <a target="_blank" rel="noreferrer noopener" className="text-lg lg:text-2xl text-orange-400 hover:text-orange-500 transition ease-in-out duration-500">
+                                            <a target="_blank" rel="noreferrer noopener" className="text-lg lg:text-2xl text-orange-400 hover:text-orange-500 transition ease-in-out duration-250">
                                                 <FontAwesomeIcon icon={faGitlab} />
                                             </a>
                                         </Link>
@@ -44,7 +44,7 @@ export default function Card(props) {
                             {
                                 (
                                     (props.repository?.type === "gitlab" && !props.repository?.href) && (
-                                        <div className="text-lg lg:text-2xl text-orange-400 hover:text-orange-500 hover:cursor-not-allowed transition ease-in-out duration-500">
+                                        <div className="text-lg lg:text-2xl text-orange-400 hover:text-orange-500 hover:cursor-not-allowed transition ease-in-out duration-250">
                                             <FontAwesomeIcon icon={faGitlab} />
                                         </div>
                                     )                                    

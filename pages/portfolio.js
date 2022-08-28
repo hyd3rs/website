@@ -25,7 +25,7 @@ export default function Portfolio() {
                 <div className="hidden sm:flex flex-row gap-x-4 items-center">
                     <Link href={links.github}>
                         <a target="_blank" rel="noreferrer noopener">
-                            <FontAwesomeIcon icon={faGithub} className="hidden sm:inline-flex text-4xl hover:text-gray-300 transition ease-in-out duration-500" /> 
+                            <FontAwesomeIcon icon={faGithub} className="hidden sm:inline-flex text-4xl hover:text-gray-300 transition ease-in-out duration-250" /> 
                         </a>
                     </Link>
                     <h1 className="font-AegixHeader font-bold text-center sm:text-left text-2xl sm:text-4xl">Open Source</h1>
