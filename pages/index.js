@@ -30,7 +30,7 @@ export default function Home({ title, avatar }) {
 
   useEffect(() => {
     async function getSpotify() {
-      const res = await fetch(`${env.api}/internal/danny/spotify`).then(res => res.json()).catch(e => {
+      const res = await fetch(`${env.info.api}/internal/danny/spotify`).then(res => res.json()).catch(e => {
         return {
           status: 500,
           response: {}
@@ -48,7 +48,7 @@ export default function Home({ title, avatar }) {
     
 
     async function getDiscord() {
-      const res = await fetch(`${env.api}/internal/danny/status`).then(res => res.json()).catch(e => {
+      const res = await fetch(`${env.info.api}/internal/danny/status`).then(res => res.json()).catch(e => {
         return {
           status: 500,
           response: {}
@@ -78,7 +78,7 @@ export default function Home({ title, avatar }) {
         <div className="px-24 sm:px-16 flex flex-col sm:flex-row items-center justify-center sm:justify-around sm:w-[80%] gap-x-8 gap-y-8">
           <Image alt="Avatar" className="w-auto sm:w-24 md:w-36 rounded-full" src={avatar} width={128} height={128} />
           <div className="flex flex-col gap-y-4 sm:gap-y-2">
-            <h1 className="font-AegixHeader text-4xl font-bold text-center sm:text-right">Hydro</h1>
+            <h1 className="font-AegixHeader text-4xl font-bold text-center sm:text-right">{env.info.name}</h1>
             <h2 className="font-AegixSubheader text-center sm:text-right">
               I can do a lot of things, but I&apos;m mainly <br />a <b>web designer</b> and <b>a journalism student</b>.
             </h2>
@@ -111,14 +111,14 @@ export default function Home({ title, avatar }) {
                   discord.code.active ? <span className="font-AegixHeader">
                     Working in <b>Visual Studio Code</b>
                   </span> : <span className="font-AegixHeader">
-                    Currently <b>{env.discordStatusFriendlyMap[discord.status.type]}</b>
+                    Currently <b>{env.discord.discordStatusFriendlyMap[discord.status.type]}</b>
                   </span>
                 }
                 customColour
                 className={
                   discord.code.active ? "text-code-default hover:text-code-darker"
                   :
-                  `${discord.status.type === "offline" ? "hover:text-gray-300" : `${env.discordColourMap[discord.status.type].default} ${env.discordColourMap[discord.status.type].hover}`}`
+                  `${discord.status.type === "offline" ? "hover:text-gray-300" : `${env.discord.discordColourMap[discord.status.type].default} ${env.discord.discordColourMap[discord.status.type].hover}`}`
                 } 
               />
               <SocialLink href={links.spotify}
@@ -142,7 +142,7 @@ export default function Home({ title, avatar }) {
 
 
 export async function getServerSideProps() {
-  const discordAvatar = await fetch(`${env.api}/internal/danny/avatar`).then(res => res.json()).catch(e => {
+  const discordAvatar = await fetch(`${env.info.api}/internal/danny/avatar`).then(res => res.json()).catch(e => {
     return {
       status: 500,
       response: null
