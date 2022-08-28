@@ -15,19 +15,22 @@ const routes = [
 export default function Head() {
     const router = useRouter();
     const [disabledNav, setDisabledNav] = useState(false);
+    const [title, setTitle] = useState("Hydro");
 
     useEffect(() => {
         if (router.pathname === '/_error') {
             setDisabledNav(true);
+            setTitle(`Oops! 404. - Hydro`);
         } else {
             setDisabledNav(false);
-        }
+            setTitle(`${routes.find(r => r.path === router.pathname).title} - Hydro`)
+        };
     }, [router.pathname]);
 
     return (
         <>
             <NextHead>
-                <title>Danny</title>
+                <title>{title}</title>
             </NextHead>
             <div className="py-6 sm:py-12">
                 <div className="flex flex-col sm:flex-row py-4 rounded-2xl justify-center items-center gap-y-4 sm:justify-evenly">

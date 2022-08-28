@@ -1,5 +1,5 @@
 import '/styles/globals.css';
-import Head from '/components/root/Head';
+import Head from '/components/Root/Head';
 import Body from '/components/Root/Body';
 
 /* NProgress */
