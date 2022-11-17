@@ -1,6 +1,7 @@
 import '/styles/globals.css';
 import Head from '/components/Root/Head';
 import Body from '/components/Root/Body';
+import { Analytics } from '@vercel/analytics/react';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head />
+      <Analytics />
       <Body>
         <Component {...pageProps} />  
       </Body>
