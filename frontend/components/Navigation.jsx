@@ -35,19 +35,19 @@ export const NavigationRoot = () => {
         <nav className="flex items-center justify-between w-full">
             <div className="group flex flex-row items-center">
                 <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
-                    <b className="dark:text-[#8761f1] dark:hover:text-[#6749b9]">hydro</b>
+                    <b className="text-hydro-light hover:text-hydro-dark">hydro</b>
                 </Link>
             </div>
             <div className="flex flex-row items-center space-x-4">
-                <Link href="/" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-300 dark:text-white">
+                <Link href="/" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-100 dark:text-hydro-textDark">
                     home
                 </Link>
-                <Link href="/about" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-300 dark:text-white">
+                <Link href="/about" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-100 dark:text-textDark">
                     about
                 </Link>
             </div>
             <div className="flex flex-row items-center space-x-4">
-                <button className="text-3xl dark:text-white dark:hover:text-gray-300" onClick={() => {
+                <button className="text-3xl dark:text-hydro-textDark dark:hover:text-gray-100" onClick={() => {
                     if (typeof window !== "undefined") {
                         // get the current theme from local storage
                         const currentTheme = localStorage.getItem("theme");

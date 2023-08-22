@@ -5,6 +5,7 @@ module.exports = {
         './pages/**/*.{js,ts,jsx,tsx,mdx}',
         './components/**/*.{js,ts,jsx,tsx,mdx}',
         './app/**/*.{js,ts,jsx,tsx,mdx}',
+        './mdx-components.jsx'
     ],
     theme: {
         extend: {
@@ -18,6 +19,14 @@ module.exports = {
                 outfit: ["var(--var-outfit)", "sans-serif"],
                 inter: ["var(--var-inter)", "sans-serif"],
                 fredoka: ["var(--var-fredoka)", "sans-serif"],
+            },
+            colors: {
+                hydro: {
+                    light: "#8761f1",
+                    dark: "#6749b9",
+                    textDark: "#cfc7ff",
+                    textLight: "#ffffff",
+                }
             }
         },
     },
