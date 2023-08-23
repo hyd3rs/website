@@ -34,7 +34,7 @@ export function useMDXComponents(components) {
         h5: ({ children }) => <h5 className={`${standardHeaderClasses} text-lg md:text-xl lg:text-2xl font-medium`}>{children}</h5>,
         h6: ({ children }) => <h6 className={`${standardHeaderClasses} text-base md:text-lg lg:text-xl font-medium `}>{children}</h6>,
         em: ({ children }) => <b className="bg-gradient-brand gradient-fade-between bg-clip-text text-transparent">{children}</b>,
-        a: ({ children, ...props }) => <Link target="_blank" rel="noreferrer noopener" className="text-purple-400 hover:text-purple-500 hover:underline" {...props}>{children}</Link>,
+        a: ({ children, ...props }) => <Link target="_blank" rel="noreferrer noopener" className="dark:text-purple-400 dark:hover:text-purple-500 underline dark:no-underline hover:underline" {...props}>{children}</Link>,
         ...components,
     }
 };
