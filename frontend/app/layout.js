@@ -9,8 +9,9 @@ const outfit = Outfit({ subsets: ['latin'], variable: "--var-outfit", display: "
 const fredoka = Fredoka({ subsets: ['latin'], variable: "--var-fredoka", display: "swap" });
 
 export const metadata = {
-    title: 'Dani',
-    description: 'Web design',
+    title: 'dani',
+    description: 'web designer. (:',
+    themeColor: "#bd85ff"
 }
 
 export default function RootLayout({ children }) {
