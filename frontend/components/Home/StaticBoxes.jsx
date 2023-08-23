@@ -1,14 +1,39 @@
 import AboutMd from "./md/About.mdx";
 import HobbiesMd from "./md/Hobbies.mdx";
+import { StandardBox, SkeletonBox, GradientBox, BoxLinks, BoxLink } from "./Boxes";
+import { BiLink, BiLogoGithub, BiLogoTwitter, BiMailSend } from 'react-icons/bi';
+import { FaLastfm } from 'react-icons/fa';
+import { SiCodeberg } from 'react-icons/si';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export const StandardBox = ({ title, children, right }) => (
-        <div className={`flex flex-col gap-y-2 px-6 py-8 dark:bg-[#321d4e] bg-[#c6abe9] rounded-xl h-full ${right ? "md:text-right md:items-end md:flex-col-reverse" : "text-left items-start"}`}>
-            <h3 className={`tracking-widest text-4xl font-bold`}>{title}</h3>
-            <div className="flex flex-col text-xl lg:max-w-[24vw]">
-                {children}
-            </div>
-        </div>
-);
+export const SocialsBox = () => {
+    return (
+        <GradientBox className={`bg-gradient-to-tr from-red-400 to-blue-400`} title="socials">
+            check out my social media and other personal corners on the internet (:
+            <BoxLinks>
+                <BoxLink href="mailto:hello@danny.works" tooltip="email (personal)">
+                    <BiMailSend className="text-2xl" />
+                </BoxLink>
+                <BoxLink href="mailto:dani@hydride.dev" tooltip="email (hydride)">
+                    <BiMailSend className="text-2xl text-orange-500 hover:text-orange-600" />
+                </BoxLink>
+                <BoxLink href="https://github.com/daniwasonline" tooltip="github">
+                    <BiLogoGithub className="text-2xl" />
+                </BoxLink>
+                <BoxLink href="https://codeberg.org/daniaintonline" tooltip="codeberg">
+                    <SiCodeberg className="text-2xl" />
+                </BoxLink>
+                <BoxLink href="https://twitter.com/daniaintonline" tooltip="twitter (x)">
+                    <BiLogoTwitter className="text-2xl" />
+                </BoxLink>
+                <BoxLink href="https://www.last.fm/user/daniaintonline" tooltip="last.fm (spotify)">
+                    <FaLastfm className="text-2xl" />
+                </BoxLink>
+            </BoxLinks>
+        </GradientBox>
+    );
+};
 
 export const About = () => {
     return (
