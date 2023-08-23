@@ -35,3 +35,22 @@ body::-webkit-scrollbar-thumb {
 
     border-radius: 20px;
 }
+
+@layer utilities {
+    .bg-gradient-hydride-muted {
+        @apply bg-gradient-to-tr from-[#803cd3] to-[#9a64e3];
+    }
+
+    .bg-gradient-hydride-brand {
+        @apply bg-gradient-to-r from-violet-400 to-orange-400;
+    }
+}
+
+.MuiTooltip-tooltip {
+    background-color: #EDEEEF !important;
+    color: #2f343D !important;
+}
+
+.MuiTooltip-arrow {
+    color: #EDEEEF !important;
+}
