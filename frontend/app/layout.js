@@ -11,15 +11,18 @@ const fredoka = Fredoka({ subsets: ['latin'], variable: "--var-fredoka", display
 export const metadata = {
     title: 'dani',
     description: 'web designer. (:',
+};
+
+export const viewpoint = {
     themeColor: "#bd85ff"
-}
+};
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className="dark">
             <ColourProvider>
                 <body className={`${outfit.variable} ${inter.variable} ${fredoka.variable} font-sans`}>
-                        <div className="dark:hidden flex flex-row items-center gap-x-2 w-full p-2 bg-red-400 font-medium font-fredoka lg:text-2xl">
+                        <div className="hidden flex-row items-center gap-x-2 w-full p-2 bg-red-400 font-medium font-fredoka lg:text-2xl">
                             <AiFillWarning className="text-6xl lg:text-3xl text-white" />
                             <span className="text-white">Howdy there! Light mode is currently a huge mess and an eyesore. Do pardon the mess, you should probably go back to dark mode.</span>
                         </div>

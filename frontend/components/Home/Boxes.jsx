@@ -26,11 +26,11 @@ export const SkeletonBox = ({ title, children, right, className, paddingEnabled 
 );
 
 export const GradientBox = ({ title, children, links, right, className }) => (
-    <SkeletonBox className={`p-[2px] ${className}`} paddingEnabled={false}>
+    <SkeletonBox className={`p-[4px] ${className}`} paddingEnabled={false}>
         <div className={`flex flex-col gap-y-4 w-full h-full dark:bg-[#1f1825] bg-[#f5f3ff] rounded-xl px-6 py-8 text-center ${right ? "lg:text-right lg:items-end" : "lg:text-left lg:items-start"}`}>
             <div className="flex flex-col gap-y-2">
                 <h3 className="tracking-widest text-3xl font-bold">{title}</h3>
-                <span className="text-xl">{children}</span>
+                <span>{children}</span>
             </div>
         </div>
     </SkeletonBox>

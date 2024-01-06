@@ -4,17 +4,17 @@ import { BsFillEmojiSmileUpsideDownFill } from 'react-icons/bs';
 import { BiLink } from 'react-icons/bi';
 import Image from 'next/image';
 import Link from 'next/link';
-import { HydrideBox } from '@std/components/Home/ProjectBoxes';
+import { FreelanceBox, HydrideBox } from '@std/components/Home/ProjectBoxes';
 import { OnDiscordTooltip } from '@std/components/Home/tooltips/onDiscord';
 
 export default async function Home() {
     const { status, spotify } = await getData();
 
     const statusHandle = {
-        online: <>am <span className="text-green-400">online</span>!</>,
-        offline: <><span className="text-hydro-light">ain&apos;t online</span>.</>,
-        dnd: <>am <span className="text-red-400">busy</span>.</>,
-        idle: <>am <span className="text-yellow-400">afk</span>.</>
+        online: <>am.. <span className="text-green-400">online*</span></>,
+        offline: <><span className="text-hydro-light">am not online</span></>,
+        dnd: <>am.. <span className="text-red-400">busy*</span></>,
+        idle: <>am.. <span className="text-yellow-400">afk*</span></>
     }
 
     return (
@@ -27,8 +27,13 @@ export default async function Home() {
                     </div>
                     <span className="text-5xl font-bold">the name&apos;s dani, and i {" "}
                         <OnDiscordTooltip>
-                            {statusHandle[status]}
+                            <span>
+                                {statusHandle[status]}
+                            </span>
                         </OnDiscordTooltip>
+                        {
+                            status === "online" ? "!" : "."
+                        }
                     </span>
                     {
                         spotify.active && (
@@ -43,7 +48,7 @@ export default async function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 w-full py-8">
                 <About />
-                <HydrideBox />
+                <FreelanceBox />
                 <SocialsBox />
                 <Hobbies />
             </div>

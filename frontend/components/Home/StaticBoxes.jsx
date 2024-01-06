@@ -10,7 +10,7 @@ import Link from 'next/link';
 export const SocialsBox = () => {
     return (
         <GradientBox className={`bg-gradient-to-tr from-red-400 to-blue-400`} title="socials">
-            check out my social media and other personal corners on the internet (:
+            Check out my social media and other personal corners on the internet!
             <BoxLinks>
                 <BoxLink href="mailto:hello@danny.works" tooltip="email (personal)">
                     <BiMailSend className="text-2xl" />
@@ -45,7 +45,7 @@ export const About = () => {
 
 export const Hobbies = () => {
     return (
-        <StandardBox right title="hobbies">
+        <StandardBox right title="passions">
             <HobbiesMd />
         </StandardBox>
     )
