@@ -17,7 +17,8 @@
 }
 
 body {
-    @apply dark:bg-[#100c14] bg-[#f5f3ff] dark:text-hydro-textDark text-[#312b55];
+   /* @apply dark:bg-[#100c14] bg-[#f5f3ff] dark:text-hydro-textDark text-[#312b55]; */
+   @apply dark:bg-black bg-[#e9e8ef] dark:text-white text-[#312b55];
 }
 
 body::-webkit-scrollbar {

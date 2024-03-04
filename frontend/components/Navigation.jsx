@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoMdDownload, IoMdMoon, IoMdSunny } from "react-icons/io";
+import { BiSun, BiMoon } from "react-icons/bi";
 
-export const NavigationRoot = () => {
-    const [ theme, setTheme ] = useState(null);
+export const NavigationRoot = ({ children }) => {
+    const [theme, setTheme] = useState(null);
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -33,12 +34,16 @@ export const NavigationRoot = () => {
     }, []);
     return (
         <nav className="flex items-center justify-between w-full">
-            <div className="group flex flex-row items-center">
+            <div className="group flex flex-row items-center gap-x-6">
                 <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
-                    <b className="text-hydro-light hover:text-hydro-dark">dani</b>
+                    <b className="dark:text-hydro-light hover:text-hydro-dark">dani</b>
                 </Link>
+                <div className="flex flex-row items-center space-x-4">
+                    {/* Navigation widgets */}
+                    {children}
+                </div>
             </div>
-            <div className="flex flex-row items-center space-x-4">
+            <div className="hidden d:flex flex-row items-center space-x-4">
                 <Link href="/" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-100 dark:text-hydro-textDark">
                     home
                 </Link>
@@ -74,9 +79,9 @@ export const NavigationRoot = () => {
                 }}>
                     {
                         theme === "dark" ? (
-                            <IoMdSunny />
+                            <BiSun />
                         ) : theme === "light" ? (
-                            <IoMdMoon />
+                            <BiMoon />
                         ) : null
                     }
                 </button>

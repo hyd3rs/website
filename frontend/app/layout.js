@@ -17,6 +17,9 @@ export const viewpoint = {
     themeColor: "#bd85ff"
 };
 
+import BasePage from "./BasePage";
+import { NavMusic } from '@std/components/Base/NavWidgets';
+
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className="dark">
@@ -26,11 +29,15 @@ export default function RootLayout({ children }) {
                             <AiFillWarning className="text-6xl lg:text-3xl text-white" />
                             <span className="text-white">Howdy there! Light mode is currently a huge mess and an eyesore. Do pardon the mess, you should probably go back to dark mode.</span>
                         </div>
-                        <div className="px-8 sm:px-16 lg:px-48 xl:px-60 2xl:px-96 py-16">
-                            <NavigationRoot />
-                            <main className="flex flex-col min-h-screen py-8">
-                                {children}
-                            </main>
+                        <div className="px-8 sm:px-16 lg:px-48 xl:px-60 2xl:px-16 py-12">
+                            <NavigationRoot>
+                                <NavMusic />
+                            </NavigationRoot>
+                            <div className="flex flex-col min-h-screen py-8">
+                                <BasePage>
+                                    {children}
+                                </BasePage>
+                            </div>
                         </div>
                 </body>
             </ColourProvider>
