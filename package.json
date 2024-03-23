@@ -1,0 +1,9 @@
+{
+  "name": "website",
+  "version": "13.0.0",
+  "description": "A portfolio/personal website",
+  "repository": "https://github.com/daniwasonline/website.git",
+  "author": "Dani <git@danny.works>",
+  "private": false,
+  "workspaces": ["apps/*"]
+}

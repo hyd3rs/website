@@ -33,11 +33,14 @@ export const NavMusic = async () => {
         <Tooltip variant="soft" title={<span className="font-sans font-medium text-base text-black">
             Press or click to search on Musixmatch
         </span>} arrow>
-            <Link target="_blank" rel="noreferrer noopener" href={`https://www.musixmatch.com/search/${struct.track?.title || "Unknown"} ${struct.track?.artist || "Unknown"}`} className="flex flex-row items-center gap-x-2 px-4 py-2 bg-purple-900 hover:bg-purple-950 rounded-full font-bold">
+            <Link target="_blank" rel="noreferrer noopener" href={`https://www.musixmatch.com/search/${struct.track?.title || "Unknown"} ${struct.track?.artist || "Unknown"}`} className="flex flex-row items-center gap-x-2 px-4 py-2 bg-purple-900 hover:bg-purple-950 rounded-full font-bold text-white">
                 <PiVinylRecord className="text-2xl animate-spin" />
-                <div>
-                    <span className="text-white font-medium">{struct.track?.title || "Unknown"}</span> &middot; <span className="text-white font-medium">{struct.track?.artist || "Unknown"}</span>
+                <div className="hidden md:block">
+                    <span className="font-medium">{struct.track?.title || "Unknown"}</span> <span className="hidden md:inline-block">&middot;</span> <span className="font-medium">{struct.track?.artist || "Unknown"}</span>
                 </div>
+                <span className="font-medium md:hidden">
+                    Tap to find current song
+                </span>
                 <div className="hidden w-4 h-4 bg-green-500 rounded-full animate-pulse" />
             </Link>
         </Tooltip>

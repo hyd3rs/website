@@ -33,7 +33,7 @@ export const NavigationRoot = ({ children }) => {
         };
     }, []);
     return (
-        <nav className="flex items-center justify-between w-full">
+        <nav className="flex items-center justify-between w-full px-8 sm:px-12">
             <div className="group flex flex-row items-center gap-x-6">
                 <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
                     <b className="dark:text-hydro-light hover:text-hydro-dark">dani</b>
@@ -79,9 +79,9 @@ export const NavigationRoot = ({ children }) => {
                 }}>
                     {
                         theme === "dark" ? (
-                            <BiSun />
+                            <BiSun className="hover:animate-pulse" />
                         ) : theme === "light" ? (
-                            <BiMoon />
+                            <BiMoon className="hover:animate-pulse" />
                         ) : null
                     }
                 </button>
