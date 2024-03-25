@@ -11,8 +11,8 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-    title: 'dani',
-    description: 'web designer. (:',
+    title: '2off',
+    description: 'i\'m a web designer!',
 };
 
 export const viewpoint = {

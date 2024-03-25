@@ -1,6 +1,6 @@
 import { BiLink, BiWinkSmile } from 'react-icons/bi';
 
-export default async function About() {
+export default function About() {
     return (
         <div className="flex flex-col gap-y-8 w-full px-8">
             <div className="flex flex-col gap-y-4">
