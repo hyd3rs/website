@@ -2,90 +2,43 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { IoMdDownload, IoMdMoon, IoMdSunny } from "react-icons/io";
-import { BiSun, BiMoon } from "react-icons/bi";
+
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@shadcn/components/ui/dropdown-menu";
+import { Button } from "@std/@shadcn/components/ui/button";
+import { TabsDrawer } from "@std/components/Base/TabsDrawer";
+import { ThemeDropdown } from "./Base/ThemeDropdown";
+
 
 export const NavigationRoot = ({ children }) => {
-    const [theme, setTheme] = useState(null);
-
-    useEffect(() => {
-        if (typeof window !== "undefined") {
-            // get the current theme from local storage
-            const currentTheme = localStorage.getItem("theme");
-
-            // if the current local storage item can be found
-            if (currentTheme) {
-                // set the theme state to the current local storage item
-
-                // if the current local storage item isn't "dark" or "light", set it to "dark"
-                if (currentTheme !== "dark" && currentTheme !== "light") {
-                    localStorage.setItem("theme", "dark");
-                };
-
-                setTheme(currentTheme || "dark");
-            } else {
-                // if the current local storage item can't be found, set it to "dark"
-                localStorage.setItem("theme", "dark");
-            };
-
-            // set the theme state to the current local storage item
-            setTheme(currentTheme || "dark");
-        };
-    }, []);
     return (
-        <nav className="flex items-center justify-between w-full px-8 sm:px-12">
-            <div className="group flex flex-row items-center gap-x-6">
-                <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
-                    <b className="dark:text-hydro-light hover:text-hydro-dark">dani</b>
-                </Link>
-                <div className="flex flex-row items-center space-x-4">
-                    {/* Navigation widgets */}
-                    {children}
+        <div className="flex flex-row items-center w-full z-[2]">
+            <div className="hidden md:flex flex-row items-center z-[10]">
+                <TabsDrawer />
+            </div>
+            <nav className="flex items-center justify-between w-full px-8 md:pl-6 sm:pr-12 z-[10]">
+                <div className="flex items-center justify-between">
+                    <div className="group flex flex-row items-center gap-x-6">
+                        <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
+                            <b className="text-slate-800 text:bg-slate-700 dark:text-hydro-light dark:hover:text-hydro-dark">2off</b>
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="hidden d:flex flex-row items-center space-x-4">
-                <Link href="/" className="font-outfit text-2xl font-medium lowercase dark:hover:text-gray-100 dark:text-hydro-textDark">
-                    home
-                </Link>
-                <button onClick={() => alert("not out yet ;)")} className="cursor-not-allowed font-outfit text-2xl font-medium lowercase dark:hover:text-gray-100 dark:text-textDark">
-                    about
-                </button>
-            </div>
-            <div className="flex flex-row items-center space-x-4">
-                <button className="text-3xl dark:text-hydro-textDark dark:hover:text-gray-100" onClick={() => {
-                    if (typeof window !== "undefined") {
-                        // get the current theme from local storage
-                        const currentTheme = localStorage.getItem("theme");
-
-                        // if the current local storage item can be found
-                        if (currentTheme) {
-                            // if the current local storage item is "dark"
-                            if (currentTheme === "dark") {
-                                // set the local storage item to "light"
-                                localStorage.setItem("theme", "light");
-                                // otherwise, if the current local storage item is "light"
-                            } else if (currentTheme === "light") {
-                                // set the local storage item to "dark"
-                                localStorage.setItem("theme", "dark");
-                            }
-                        } else {
-                            // if the current local storage item can't be found, set it to "dark"
-                            localStorage.setItem("theme", "dark");
-                        };
-
-                        // reload 
-                        window.location.reload();
-                    };
-                }}>
-                    {
-                        theme === "dark" ? (
-                            <BiSun className="hover:animate-pulse" />
-                        ) : theme === "light" ? (
-                            <BiMoon className="hover:animate-pulse" />
-                        ) : null
-                    }
-                </button>
-            </div>
-        </nav>
+                <div className="flex flex-row items-center justify-end space-x-4">
+                    <div className="hidden md:flex flex-row items-center space-x-4">
+                        {/* Navigation widgets */}
+                        {children}
+                    </div>
+                    <div className="md:hidden">
+                        <TabsDrawer />
+                    </div>
+                    <ThemeDropdown />
+                </div>
+            </nav>
+        </div>
     )
 };

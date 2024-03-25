@@ -1,12 +1,4 @@
-
-import { Hobbies, SocialsBox } from '@std/components/Home/StaticBoxes';
-import { BsFillEmojiSmileUpsideDownFill } from 'react-icons/bs';
 import { BiLink, BiWinkSmile } from 'react-icons/bi';
-import Image from 'next/image';
-import Link from 'next/link';
-import { FreelanceBox, HydrideBox } from '@std/components/Home/ProjectBoxes';
-import { OnDiscordTooltip } from '@std/components/Home/tooltips/onDiscord';
-import { MarkdownBar } from '@std/components/Base/Markdown';
 
 export default async function About() {
     return (
@@ -17,7 +9,7 @@ export default async function About() {
                     <BiWinkSmile className="text-4xl" />
                 </div>
                 <span className="text-2xl font-regular font-outfit">
-                I&apos;m Dani. Outside of my work and studies, I have a passion for web development and UI design.
+                    I&apos;m Dani. Outside of my work and studies, I have a passion for web development and UI design.
                 </span>
             </div>
         </div>

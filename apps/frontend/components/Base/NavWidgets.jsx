@@ -33,7 +33,7 @@ export const NavMusic = async () => {
         <Tooltip variant="soft" title={<span className="font-sans font-medium text-base text-black">
             Press or click to search on Musixmatch
         </span>} arrow>
-            <Link target="_blank" rel="noreferrer noopener" href={`https://www.musixmatch.com/search/${struct.track?.title || "Unknown"} ${struct.track?.artist || "Unknown"}`} className="flex flex-row items-center gap-x-2 px-4 py-2 bg-purple-900 hover:bg-purple-950 rounded-full font-bold text-white">
+            <Link target="_blank" rel="noreferrer noopener" href={`https://www.musixmatch.com/search/${struct.track?.title || "Unknown"} ${struct.track?.artist || "Unknown"}`} className="transition-all ease-in-out duration-300 flex flex-row items-center gap-x-2 px-4 py-2 border-2 border-slate-800 hover:bg-slate-800 dark:border-purple-900 dark:hover:bg-purple-900 rounded-2xl font-bold hover:text-white dark:text-white">
                 <PiVinylRecord className="text-2xl animate-spin" />
                 <div className="hidden md:block">
                     <span className="font-medium">{struct.track?.title || "Unknown"}</span> <span className="hidden md:inline-block">&middot;</span> <span className="font-medium">{struct.track?.artist || "Unknown"}</span>

@@ -15,13 +15,13 @@ export const Tabs = ({ standard, invisible, setOpen }) => {
     const Card = standard ? StandardTabCard : TabCard;
     return (
         <>
-            <Card title="Hello!" icon={PiHandWaving} href="/" invisible={invisible} setOpen={setOpen}>
+            <Card title="Hello!" icon={PiHandWaving} href="/" className="border-cyan-900 group-hover:bg-cyan-900" invisible={invisible} setOpen={setOpen}>
                 Thanks for stopping by!
             </Card>
-            <Card title="About Me" icon={BiUser} href="/about" className="bg-red-900 hover:bg-red-950 md:hover:bg-red-900" invisible={invisible} setOpen={setOpen}>
+            <Card title="About Me" icon={BiUser} href="/about" className="border-red-900 group-hover:bg-red-900" invisible={invisible} setOpen={setOpen}>
                 Who am I? What do I do?
             </Card>
-            <Card title="Projects" icon={BiPaint} className="bg-green-900 hover:bg-green-950 md:hover:bg-green-900" href="/projects" invisible={invisible} setOpen={setOpen}>
+            <Card title="Projects" icon={BiPaint} className="border-green-900 group-hover:bg-green-900" href="/projects" invisible={invisible} setOpen={setOpen}>
                 My previous work sits here!
             </Card>
         </>
@@ -34,7 +34,7 @@ export const TabsDrawer = () => {
         <>
             <Transition
                 show={open}
-                className="hidden md:block bg-black bg-opacity-50 absolute z-[2] top-0 left-0 w-full h-full"
+                className="hidden md:block bg-black bg-opacity-[0.2] dark:bg-opacity-75 absolute z-[3] top-0 left-0 w-full h-full"
                 enter="transition-opacity ease-in-out duration-500"
                 enterFrom="opacity-0"
                 enterTo="opacity-100"
@@ -43,10 +43,10 @@ export const TabsDrawer = () => {
                 leaveTo="opacity-0"
                 onClick={(() => setOpen(false))}
             />
-            <div className="relative">
+            <div className="hidden md:block md:relative">
                 <div className="flex flex-col gap-y-4 transition-all ease-in-out duration-500">
                     <div className="z-[5] pl-8 sm:pl-12">
-                        <button onClick={(() => setOpen(!open))} className={`z-[10] text-white hidden md:flex flex-col items-center justify-center p-4 h-16 w-16 rounded-full bg-purple-900 hover:bg-purple-950 mb-4`}>
+                        <button onClick={(() => setOpen(!open))} className={`transition-all ease-in-out duration-300 z-[10] text-black dark:text-white hidden md:flex flex-col items-center justify-center p-2 h-12 w-12 rounded-2xl border-2 bg-transparent border-slate-900 hover:text-white hover:bg-slate-900 dark:border-purple-900 dark:hover:bg-purple-900`}>
                             {
                                 open ? <BiX className="text-3xl" /> : <BiMenu className="text-3xl" />
                             }
@@ -62,7 +62,7 @@ export const TabsDrawer = () => {
                         leaveTo="opacity-0"
                         className="mt-0 absolute hidden px-8 sm:px-12 h-fit z-[3] md:flex flex-row justify-center md:flex-col md:items-start md:justify-start gap-x-4 md:gap-x-0 md:gap-y-2 w-fit md:min-w-[24rem]"
                     >
-                        <div className="-z-[3] invisible flex-col items-center justify-center p-4 h-16 w-16 rounded-2xl mb-4" />
+                        <div className="-z-[3] invisible flex-col items-center justify-center p-4 h-16 w-16 rounded-2xl" />
                         <Tabs setOpen={setOpen} />
                     </Transition>
                     <Transition
@@ -78,10 +78,10 @@ export const TabsDrawer = () => {
                         <div className="-z-[1] hidden flex-col items-center justify-center p-4 h-16 w-16 rounded-2xl mb-4" />
                         <Tabs standard invisible />
                     </Transition>
-                    <div className="md:hidden px-8 sm:px-12 h-fit z-[2] flex flex-row justify-evenly md:flex-col md:items-start md:justify-start gap-x-4 md:gap-x-0 md:gap-y-2 aw-full md:min-w-[24rem]">
-                        <Tabs />
-                    </div>
                 </div>
+            </div>
+            <div className="md:hidden h-fit z-[2] flex flex-row justify-evenly gap-x-4 md:gap-x-0 md:gap-y-2">
+                <Tabs />
             </div>
         </>
     );

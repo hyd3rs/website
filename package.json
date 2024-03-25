@@ -4,6 +4,7 @@
   "description": "A portfolio/personal website",
   "repository": "https://github.com/daniwasonline/website.git",
   "author": "Dani <git@danny.works>",
-  "private": false,
-  "workspaces": ["apps/*"]
+  "private": true,
+  "workspaces": ["apps/*"],
+  "packageManager": "yarn@1.22.19"
 }
