@@ -8,10 +8,11 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "@shadcn/components/ui/dropdown-menu";
-import { Button } from "@std/@shadcn/components/ui/button";
+} from "@/shadcn/components/ui/dropdown-menu";
+import { Button } from "@/shadcn/components/ui/button";
 import { TabsDrawer } from "@std/components/Base/TabsDrawer";
 import { ThemeDropdown } from "./Base/ThemeDropdown";
+import { NameBrand } from "@std/components/Branding";
 
 
 export const NavigationRoot = ({ children }) => {
@@ -23,8 +24,8 @@ export const NavigationRoot = ({ children }) => {
             <nav className="flex items-center justify-between w-full px-8 md:pl-6 sm:pr-12 z-[10]">
                 <div className="flex items-center justify-between">
                     <div className="group flex flex-row items-center gap-x-6">
-                        <Link href="/" className="font-outfit text-4xl font-medium lowercase dark:group-hover:text-gray-300">
-                            <b className="text-slate-800 text:bg-slate-700 dark:text-hydro-light dark:hover:text-hydro-dark">2off</b>
+                        <Link href="/" className="font-outfit text-4xl lowercase text-slate-800 group-hover:text-black dark:text-white dark:group-hover:text-gray-300">
+                            <NameBrand />
                         </Link>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@std/*": ["./*"],
-      "@shadcn/*": ["./@shadcn/*"]
+      "@/*": ["./@/*"]
     }
   }
 }

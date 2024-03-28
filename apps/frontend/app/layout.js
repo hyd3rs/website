@@ -1,6 +1,6 @@
 import './globals.css'
 import { Fredoka, Golos_Text, Inter, IBM_Plex_Mono, Outfit, Rubik } from 'next/font/google'
-import { ThemeProvider } from './Providers';
+import { ThemeProvider } from '@std/app/Client';
 import { AiFillWarning } from 'react-icons/ai';
 
 const inter = Inter({ subsets: ['latin'], variable: "--var-inter", display: "swap" })
@@ -20,6 +20,7 @@ export const viewpoint = {
 };
 
 import Layout from "@std/components/Layout";
+import { Footer } from '@std/components/Base/Footer';
 import { NavigationRoot } from '@std/components/Navigation';
 import { NavMusic } from '@std/components/Base/NavWidgets';
 
@@ -36,10 +37,13 @@ export default function RootLayout({ children }) {
                         <NavigationRoot>
                             <NavMusic />
                         </NavigationRoot>
-                        <div className="flex flex-col min-h-screen py-8">
+                        <div className="relative flex flex-col min-h-[90vh] py-8 h-full">
                             <Layout>
                                 {children}
                             </Layout>
+                            <div className="mt-48 sm:mt-96 lg:mt-36 xl:mt-24">
+                                <Footer />
+                            </div>
                         </div>
                     </div>
                 </ThemeProvider>

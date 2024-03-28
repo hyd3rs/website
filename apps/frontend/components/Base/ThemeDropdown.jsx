@@ -6,8 +6,8 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from "@shadcn/components/ui/dropdown-menu";
-import { Button } from "@std/@shadcn/components/ui/button";
+} from "@/shadcn/components/ui/dropdown-menu";
+import { Button } from "@/shadcn/components/ui/button";
 
 export const ThemeDropdown = ({ children }) => {
     const { setTheme, theme, resolvedTheme } = useTheme();

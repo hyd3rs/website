@@ -8,21 +8,21 @@ import { Transition } from '@headlessui/react';
 import { StandardTabCard, TabCard } from '@std/components/Base/Tabs';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import { BiMenu, BiPaint, BiUser, BiX } from 'react-icons/bi';
+import { BiMenu, BiPaint, BiPencil, BiUser, BiX } from 'react-icons/bi';
 import { PiHandWaving } from 'react-icons/pi';
 
 export const Tabs = ({ standard, invisible, setOpen }) => {
     const Card = standard ? StandardTabCard : TabCard;
     return (
         <>
-            <Card title="Hello!" icon={PiHandWaving} href="/" className="border-cyan-900 group-hover:bg-cyan-900" invisible={invisible} setOpen={setOpen}>
-                Thanks for stopping by!
+            <Card title="hello!" icon={PiHandWaving} href="/" className="border-cyan-900 group-hover:bg-cyan-900" invisible={invisible} setOpen={setOpen}>
+                thanks for stopping by!
             </Card>
-            <Card title="About Me" icon={BiUser} href="/about" className="border-red-900 group-hover:bg-red-900" invisible={invisible} setOpen={setOpen}>
-                Who am I? What do I do?
+            <Card title="projects" icon={BiPaint} className="border-green-900 group-hover:bg-green-900" href="/projects" invisible={invisible} setOpen={setOpen}>
+                find my previous works here.
             </Card>
-            <Card title="Projects" icon={BiPaint} className="border-green-900 group-hover:bg-green-900" href="/projects" invisible={invisible} setOpen={setOpen}>
-                My previous work sits here!
+            <Card title="my corner" icon={BiPencil} href="/corner" className="border-red-900 group-hover:bg-red-900" invisible={invisible} setOpen={setOpen}>
+                i dump thoughts n&apos; stuff here tbh
             </Card>
         </>
     );
