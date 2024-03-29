@@ -1,10 +1,16 @@
 {
-  "name": "website",
-  "version": "13.0.0",
-  "description": "A portfolio/personal website",
-  "repository": "https://github.com/daniwasonline/website.git",
-  "author": "Dani <git@danny.works>",
-  "private": true,
-  "workspaces": ["apps/*"],
-  "packageManager": "yarn@1.22.19"
+    "name": "website",
+    "version": "13.0.0",
+    "description": "A portfolio/personal website",
+    "repository": "https://github.com/daniwasonline/website.git",
+    "author": "Dani <git@danny.works>",
+    "private": true,
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "turbo build --remote-cache-read-only=true",
+        "build:remote": "turbo build --remote-cache-read-only=false"
+    },
+    "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781"
 }

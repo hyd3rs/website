@@ -1,32 +1,38 @@
+"use client";
+
 import { BiMusic } from "react-icons/bi";
 import Link from "next/link";
 import { PiVinylRecord } from "react-icons/pi";
 import { Tooltip } from "@std/app/Client";
+import useSWR from "swr";
 
-export const NavMusic = async () => {
-    const spotify = await fetch(`https://anemo.danny.works/user/spotify`, {
-        next: {
-            revalidate: 60
-        }
-    }).then(res => {
-        if (res.ok) {
-            return res.json();
-        } else {
-            return {};
-        };
-    }).catch(e => {
-        console.error(`ERROR LOGGED: ` + e)
-        return {};
+const fetcher = (...args) => fetch(...args).then(res => res.json());
+
+export const useSpotify = () => {
+    const { data, error, isLoading } = useSWR(`https://anemo.danny.works/user/spotify`, fetcher, {
+        refreshInterval: 15000
     });
 
     const struct = {
-        active: spotify?.response?.active || false,
-        track: spotify?.response?.songInfo || {
+        active: data?.response?.active || false,
+        track: data?.response?.songInfo || {
             title: null,
             artist: null,
         }
     };
 
+    return {
+        struct,
+        isLoading,
+        error
+    }
+};
+
+export const NavMusic = () => {
+    const { struct, isLoading, error } = useSpotify();
+
+    if (isLoading) return null;
+    if (error) return null;
     if (!struct?.active) return null;
 
     return (

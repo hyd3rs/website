@@ -7,12 +7,11 @@ export const Footer = () => {
         <footer className="flex flex-col lg:flex-row justify-center lg:justify-between gap-4 items-center absolute bottom-0 left-0 bg-[#120820] text-white w-full px-8 md:px-16 py-4">
             <div className="flex flex-row items-center gap-x-2 text-2xl">
                 <span>
-                    made with
+                    an
                 </span>
-                <BiHeart />
+                <FooterBrand />
                 <span>
-                    by {" "}
-                    <FooterBrand />
+                    project
                 </span>
             </div>
             <span className="dark hidden xl:flex flex-row items-center gap-x-4">

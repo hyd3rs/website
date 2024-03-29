@@ -26,22 +26,26 @@ export const MainContent = () => (
 export const BigBook = () => (
     <div className="hidden lg:flex flex-col gap-y-4 lg:items-center lg:justify-center lg:mr-32">
         <div className="relative">
-            <div className="-mr-16 -mt-8 absolute top-0 right-0 animate-pulse text-purple-500 font-bold md:text-[5rem] lg:text-[8rem] rounded-full">
+            <div className="-mr-16 mt-8 absolute top-0 right-0 animate-pulse text-purple-500 font-bold md:text-[5rem] lg:text-[8rem] rounded-full">
                 *
             </div>
-            <BiSolidBook className="text-purple-400 rotate-[15deg] md:text-[8rem] lg:text-[12rem] xl:text-[16rem]" />
+            <span className="text-purple-400 rotate-[15deg] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] font-bold">d</span>
         </div>
     </div>
 );
 
 export const NavigationRow = () => (
     <>
-        <HeaderLink href="/about" className="flex flex-row items-center gap-x-2">
-            <BiSolidUser />
+        <HeaderLink href="/corner/p/about" className="flex flex-row items-center gap-x-2">
+            <BiSolidUser className="hidden xl:inline-block" />
             about me
         </HeaderLink>
+        <HeaderLink href="/corner" className="flex flex-row items-center gap-x-2">
+            <BiSolidBook className="hidden xl:inline-block" />
+            my corner
+        </HeaderLink>
         <HeaderLink href="/contact" className="flex flex-row items-center gap-x-2">
-            <BiSolidPaperPlane />
+            <BiSolidPaperPlane className="hidden xl:inline-block" />
             contact
         </HeaderLink>
     </>

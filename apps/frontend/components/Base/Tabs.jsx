@@ -5,14 +5,14 @@ export const TabCard = ({ title, children, className, href, icon, midHover, setO
     const Icon = icon || FaQuestionCircle;
     return (
         <>
-            <Link href={href || "#"} className={`dark:text-white hover:text-white relative flex group transition-all ease-in-out duration-500 flex-col items-start gap-y-0 md:px-4 md:py-8 md:hover:py-4 md:hover:mb-16 rounded-2xl`} onClick={(() => {
+            <Link href={href || "#"} className={`dark:text-white hover:text-white relative flex group transition-all ease-in-out delay-100 duration-500 flex-col items-start gap-y-0 md:px-4 md:py-8 md:hover:py-4 md:hover:mb-16 rounded-2xl`} onClick={(() => {
                 if (setOpen) setOpen(false);
             })}>
-                <div className="text-white bg-transparent absolute flex flex-col min-w-96 w-32 opacity-0 group-hover:opacity-100 group-hover:w-96">
-                    <span className={`opacity-0 hidden md:inline-block md:group-hover:opacity-100 transition-all ease-in-out duration-500 delay-250 md:text-[0.000000000000000000000001rem] group-hover:md:text-3xl font-medium`}>
+                <div className="text-white bg-transparent absolute flex flex-col min-w-96 disabled:w-32 opacity-0 group-hover:opacity-100 ease-in-out duration-500 delay-250 w-96">
+                    <span className={`opacity-0 hidden md:group-hover:inline-block md:group-hover:opacity-100 transition-all ease-in-out duration-500 delay-250 text-3xl font-medium`}>
                         {title}
                     </span>
-                    <span className={`opacity-0 hidden md:inline-block md:group-hover:opacity-100 transition-all ease-in-out duration-500 delay-250 text-xl md:text-[0.000000000000000000000001rem] group-hover:md:text-xl font-regular`}>
+                    <span className={`opacity-0 hidden md:group-hover:inline-block md:group-hover:opacity-100 transition-all ease-in-out duration-500 delay-250 text-xl font-regular`}>
                         {children}
                     </span>
                 </div>
