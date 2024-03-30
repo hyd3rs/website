@@ -28,7 +28,7 @@ export const Links = (props) => {
             <StandardButtonLink icon href="https://codeberg.org/daniaintonline" external {...props}>
                 <SiCodeberg />
             </StandardButtonLink>
-            <StandardButtonLink icon href="https://twitter.com/daniaintonline" external {...props}>
+            <StandardButtonLink icon href="https://twitter.com/dani2off" external {...props}>
                 <BiLogoTwitter />
             </StandardButtonLink>
             <StandardButtonLink icon href="https://www.last.fm/user/daniaintonline" external {...props}>

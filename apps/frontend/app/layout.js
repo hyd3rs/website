@@ -33,11 +33,13 @@ export default function RootLayout({ children }) {
                         <AiFillWarning className="text-6xl lg:text-3xl text-white" />
                         <span className="text-white">Howdy there! Light mode is currently a huge mess and an eyesore. Do pardon the mess, you should probably go back to dark mode.</span>
                     </div>
-                    <div className="pt-12">
-                        <NavigationRoot>
-                            <NavMusic />
-                        </NavigationRoot>
-                        <div className="relative flex flex-col min-h-[92vh] py-8 h-full">
+                    <div>
+                        <div className="bg-background pt-12">
+                            <NavigationRoot>
+                                <NavMusic />
+                            </NavigationRoot>
+                        </div>
+                        <div className="relative flex flex-col min-h-[90vh] py-8 h-full bg-background">
                             <Layout>
                                 {children}
                             </Layout>
