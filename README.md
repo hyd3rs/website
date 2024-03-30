@@ -1,15 +1,18 @@
-# danny.works (daniwasonline), v12
-Time for the yearly refresh of this website! This repository is a monorepo for all related projects related to this website. At the moment, it's just the frontend, but I may choose to open-source Anemo (the backend API for v11 and v12) in the future.
+# danny.works v13
+Woops, this one was a [bit early](https://github.com/daniwasonline/website/releases/tag/12.0.0), but it's time for a refresh again! This project serves to prove my design and development standards, and I periodically refresh danny.works every so often in order to reflect my growth.
+
+
+## What's in this repository?
+As always, this is a monorepo. Unlike last time, I'm using Turborepo, but the frontend's the only thing in here for now.
+
+Currently, Anemo (the backend API for v11, v12, and now v13.0) powers dynamic data - for now, that's the music widget. This will likely change in the future; I'm not sure when I'll have time to do this, but the new backend API will be included here when it's ready (in Gleam or Go, perhaps?).
 
 ## Retrospective
-This is probably the best iteration thus far, and I'm very much proud of how it turned out! Like v11, this site is built with Next.js and Tailwind, but is a lot more efficient in the backend given that it now utilises server-side fetches in App Directory. Not everything is here, obviously, but what I've got I'm very happy with!
+This one took much longer than any of my previous ones - I've been sitting on this new codebase since January, but I spent the latter half of March polishing this project and architecting a viable system for [**the corner**](https://danny.works/corner). As such, I won't waste the opportunity and I'll eventually release a full retrospective (and possible dev log?) on the development of this site on there.
 
-I should play with animations down the line, if I remember :p
+If I remember, I'll update this README with a link to that when I've written it.
 
+(I also need to finish the about page, but I can do that later.)
 
-## Credit
-Credit should be given where it's due:
-
-- Inspiration: [axyria.dev](https://axyria.dev/), I found their website super cool and essentially used their website as sort of a reference for v12. Kudos!
-- Icons: [React Icons](https://react-icons.github.io/react-icons/), I used their icons throughout the site for pretty much every icon.
-- Everyone else who helped critique the site and gave me feedback, thank you! :D
+## Credits
+- **Inspiration**: [Andrea](https://avris.it). I stumbled across their website a few months ago and randomly thought about creating my own CMS/blog - this ended up turning into **the corner**!
