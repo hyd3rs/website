@@ -18,7 +18,7 @@ export const Tabs = ({ standard, invisible, setOpen }) => {
             <Card title="hello!" icon={PiHandWaving} href="/" className="border-cyan-900 group-hover:bg-cyan-900" invisible={invisible} setOpen={setOpen}>
                 thanks for stopping by!
             </Card>
-            <Card title="projects" icon={BiPaint} className="border-green-900 group-hover:bg-green-900" href="/projects" invisible={invisible} setOpen={setOpen}>
+            <Card title="projects" href="https://hydride.dev/projects" external icon={BiPaint} className="border-green-900 group-hover:bg-green-900" invisible={invisible} setOpen={setOpen}>
                 find my previous works here.
             </Card>
             <Card title="my corner" icon={BiPencil} href="/corner" className="border-red-900 group-hover:bg-red-900" invisible={invisible} setOpen={setOpen}>

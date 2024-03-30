@@ -1,11 +1,11 @@
 import { FaHome, FaQuestionCircle } from "react-icons/fa";
 import Link from "next/link";
 
-export const TabCard = ({ title, children, className, href, icon, midHover, setOpen }) => {
+export const TabCard = ({ title, children, className, href, icon, midHover, setOpen, external }) => {
     const Icon = icon || FaQuestionCircle;
     return (
         <>
-            <Link href={href || "#"} className={`dark:text-white hover:text-white relative flex group transition-all ease-in-out delay-100 duration-500 flex-col items-start gap-y-0 md:px-4 md:py-8 md:hover:py-4 md:hover:mb-16 rounded-2xl`} onClick={(() => {
+            <Link href={href || "#"} target={external ? "_blank" : undefined} rel={external ? "noreferrer noopener" : undefined} className={`dark:text-white hover:text-white relative flex group transition-all ease-in-out delay-100 duration-500 flex-col items-start gap-y-0 md:px-4 md:py-8 md:hover:py-4 md:hover:mb-16 rounded-2xl`} onClick={(() => {
                 if (setOpen) setOpen(false);
             })}>
                 <div className="text-white bg-transparent absolute flex flex-col min-w-96 disabled:w-32 opacity-0 group-hover:opacity-100 ease-in-out duration-500 delay-250 w-96">

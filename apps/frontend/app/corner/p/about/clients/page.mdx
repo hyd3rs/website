@@ -1,0 +1,54 @@
+import {
+  Head,
+  Subpages,
+  SubpageLink,
+  SubpageSelected,
+} from "@std/components/Corner/Post";
+import { CornerBrand, NameBrand, FooterBrand } from "@std/components/Branding";
+
+export const context = {
+  title: "information for clients",
+  author: "Dani",
+  description:
+    "General information for those looking to hire my consultancy/freelance services.",
+  timestamp: "2024-03-30",
+  parent: "about",
+  integral: true,
+  hidden: true,
+};
+
+export const metadata = {
+  title: context?.title + " - dani's corner",
+  description: context?.description,
+};
+
+<Head {...context} />
+<Subpages>
+  <SubpageLink parent="about">general</SubpageLink>
+  <SubpageSelected>for clients</SubpageSelected>
+  <SubpageLink parent="about" slug="experience">
+    experience
+  </SubpageLink>
+</Subpages>
+
+Here's some key information in case you're looking to hire me as a consultant or a freelancer:
+
+## What types of consultancy do you do?
+
+As mentioned in the main page, I have experience across the board when it comes to tech. However, I primarily provide web/UI design, software engineering, and DevOps consultancy.
+
+Take a look at the experience subpage for more information on what I can do for you.
+
+## Who do you work with? Can I take a look at your work?
+
+As a freelancer/consultant, I work with many individuals and businesses - sometimes in a team, other times individually. Many of my recent works are non-public, as I'm regularly hired to design or develop intuitive applications for private usage.
+
+Outside of the web, I'm also occasionally hired as a DevOps engineer to create internal tooling and manage cloud infrastructure.
+
+If you'd like to look at a few clients that I've worked with, [take a look at my team's project portfolio](https://hydride.dev/projects) (or take a look at some of the other stuff in the [corner\*](/corner)). My open-source and source-available works can be found on my GitHub and Codeberg pages - those can be found [on the home page](/).
+
+**This website** is also a great reference as to what my capabilities are! I recreate this site regularly (much often before, but now once or twice a year) in order to showcase my capabilities and growth, and I often use it as a playground for new things that I'm trying. The footer has a direct link to the repository, just tap my name and it'll open up the GitHub mirror for this site!
+
+## How can I reach out to you?
+
+Sold on what I can do for you? Shoot me [an email](mailto:hello@danny.works). I usually have a few projects going on at once (not to mention my busy schedule), so I can't promise you that I'll get back in haste. I'll try to respond relatively quickly, though!

@@ -29,7 +29,7 @@ export const BigBook = () => (
             <div className="-mr-16 mt-8 absolute top-0 right-0 animate-pulse text-purple-500 font-bold md:text-[5rem] lg:text-[8rem] rounded-full">
                 *
             </div>
-            <span className="text-purple-400 rotate-[15deg] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] font-bold">d</span>
+            <span className="text-slate-800 dark:text-purple-400 rotate-[15deg] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] font-bold">d</span>
         </div>
     </div>
 );
@@ -37,27 +37,23 @@ export const BigBook = () => (
 export const NavigationRow = () => (
     <>
         <HeaderLink href="/corner/p/about" className="flex flex-row items-center gap-x-2">
-            <BiSolidUser className="hidden xl:inline-block" />
+            <BiSolidUser className="hidden lg:inline-block" />
             about me
         </HeaderLink>
         <HeaderLink href="/corner" className="flex flex-row items-center gap-x-2">
-            <BiSolidBook className="hidden xl:inline-block" />
+            <BiSolidBook className="hidden lg:inline-block" />
             my corner
-        </HeaderLink>
-        <HeaderLink href="/contact" className="flex flex-row items-center gap-x-2">
-            <BiSolidPaperPlane className="hidden xl:inline-block" />
-            contact
         </HeaderLink>
     </>
 );
 
 export const Interactables = () => (
     <div className="flex flex-col gap-y-4 items-center sm:items-start">
-        <div className="grid xl:hidden grid-cols-5 gap-4 w-fit">
-            <Links />
-        </div>
         <div className="flex flex-row items-center gap-x-4">
             <NavigationRow />
+        </div>
+        <div className="grid grid-cols-5 gap-4 w-fit">
+            <Links />
         </div>
     </div>
 );

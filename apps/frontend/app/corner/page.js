@@ -3,6 +3,11 @@ import { getAllPosts } from "./fsHandling";
 
 //export const revalidate = 1800;
 
+export const metadata = {
+    title: 'dani\'s corner',
+    description: 'my cozy, little corner of the internet. i post random things here on occasion! :)',
+};
+
 const Page = async () => {
     const posts = await getAllPosts();
     return (

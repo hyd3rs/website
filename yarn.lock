@@ -4902,6 +4902,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"charenc@npm:0.0.2":
+  version: 0.0.2
+  resolution: "charenc@npm:0.0.2"
+  checksum: 10c0/a45ec39363a16799d0f9365c8dd0c78e711415113c6f14787a22462ef451f5013efae8a28f1c058f81fc01f2a6a16955f7a5fd0cd56247ce94a45349c89877d8
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:^3.4.0, chokidar@npm:^3.5.3":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
@@ -5244,6 +5251,13 @@ __metadata:
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
   checksum: 10c0/5738c312387081c98d69c98e105b6327b069197f864a60593245d64c8089c8a0a744e16349281210d56835bb9274130d825a78b2ad6853ca13cfbeffc0c31750
+  languageName: node
+  linkType: hard
+
+"crypt@npm:0.0.2":
+  version: 0.0.2
+  resolution: "crypt@npm:0.0.2"
+  checksum: 10c0/adbf263441dd801665d5425f044647533f39f4612544071b1471962209d235042fb703c27eea2795c7c53e1dfc242405173003f83cf4f4761a633d11f9653f18
   languageName: node
   linkType: hard
 
@@ -6727,7 +6741,9 @@ __metadata:
     eslint-config-next: "npm:^14.1.1"
     glob: "npm:^10.3.12"
     lucide-react: "npm:^0.363.0"
+    md5: "npm:^2.3.0"
     next: "npm:14.1"
+    next-nprogress-bar: "npm:^2.3.9"
     next-themes: "npm:^0.3.0"
     postcss: "npm:8.4.27"
     react: "npm:18.2"
@@ -7583,6 +7599,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-buffer@npm:~1.1.6":
+  version: 1.1.6
+  resolution: "is-buffer@npm:1.1.6"
+  checksum: 10c0/ae18aa0b6e113d6c490ad1db5e8df9bdb57758382b313f5a22c9c61084875c6396d50bbf49315f5b1926d142d74dfb8d31b40d993a383e0a158b15fea7a82234
+  languageName: node
+  linkType: hard
+
 "is-callable@npm:^1.1.3, is-callable@npm:^1.1.4, is-callable@npm:^1.2.7":
   version: 1.2.7
   resolution: "is-callable@npm:1.2.7"
@@ -8434,6 +8457,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"md5@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "md5@npm:2.3.0"
+  dependencies:
+    charenc: "npm:0.0.2"
+    crypt: "npm:0.0.2"
+    is-buffer: "npm:~1.1.6"
+  checksum: 10c0/14a21d597d92e5b738255fbe7fe379905b8cb97e0a49d44a20b58526a646ec5518c337b817ce0094ca94d3e81a3313879c4c7b510d250c282d53afbbdede9110
+  languageName: node
+  linkType: hard
+
 "mdast-util-from-markdown@npm:^2.0.0":
   version: 2.0.0
   resolution: "mdast-util-from-markdown@npm:2.0.0"
@@ -9247,6 +9281,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-nprogress-bar@npm:^2.3.9":
+  version: 2.3.9
+  resolution: "next-nprogress-bar@npm:2.3.9"
+  dependencies:
+    nprogress: "npm:^0.2.0"
+  checksum: 10c0/c29a0e8e9bd6375c997f8674a24ff97d25033335ce246fd27fd22d9b675bf70834db363777d6bc9decd05569b1dca0343b89d21aaee659d4df9c057f1699d036
+  languageName: node
+  linkType: hard
+
 "next-themes@npm:^0.3.0":
   version: 0.3.0
   resolution: "next-themes@npm:0.3.0"
@@ -9389,6 +9432,13 @@ __metadata:
   dependencies:
     path-key: "npm:^3.0.0"
   checksum: 10c0/8399f01239e9a5bf5a10bddbc71ecac97e0b7890e5b78abe9731fc759db48865b0686cc86ec079cd254a98ba119a3fa08f1b23f9de1a5428c19007bbc7b5a728
+  languageName: node
+  linkType: hard
+
+"nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "nprogress@npm:0.2.0"
+  checksum: 10c0/eab9a923a1ad1eed71a455ecfbc358442dd9bcd71b9fa3fa1c67eddf5159360b182c218f76fca320c97541a1b45e19ced04e6dcb044a662244c5419f8ae9e821
   languageName: node
   linkType: hard
 

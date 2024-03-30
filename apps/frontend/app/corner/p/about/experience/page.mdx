@@ -1,0 +1,290 @@
+import {
+  Head,
+  Subpages,
+  SubpageLink,
+  SubpageSelected,
+} from "@std/components/Corner/Post";
+import { CornerBrand } from "@std/components/Branding";
+import { NameBrand } from "@std/components/Branding";
+import {
+  BiLogoJavascript,
+  BiLogoPython,
+  BiLogoGoLang,
+  BiLogoReact,
+  BiLogoVuejs,
+  BiLogoAngular,
+  BiLogoFigma,
+  BiLogoDjango,
+  BiSolidVideo,
+} from "react-icons/bi";
+import {
+  SiSolid,
+  SiAdobexd,
+  SiRust,
+  SiElixir,
+  SiAstro,
+  SiCsharp,
+  SiUnrealengine,
+  SiUnity,
+  SiGodotengine,
+  SiAutodesk,
+  SiBlender,
+  SiPytorch,
+  SiTensorflow,
+  SiAdobepremierepro,
+  SiLinux,
+  SiRedhat,
+  SiDebian,
+  SiDocker,
+  SiAnsible,
+  SiWindows,
+} from "react-icons/si";
+import { Gleam } from "./Client";
+
+export const context = {
+  title: "my experience",
+  author: "Dani",
+  description:
+    "General information for those looking to hire my consultancy/freelance services.",
+  timestamp: "2024-03-30",
+  parent: "about",
+  integral: true,
+  hidden: true,
+};
+
+export const metadata = {
+  title: context?.title + " - dani's corner",
+  description: context?.description,
+};
+
+<Head {...context} />
+<Subpages>
+  <SubpageLink parent="about">general</SubpageLink>
+  <SubpageLink parent="about" slug="clients">
+    for clients
+  </SubpageLink>
+  <SubpageSelected>experience</SubpageSelected>
+</Subpages>
+
+If you need detail in what I've worked with and my general experience, you've come to the right place!
+
+## (Software) Engineering & Design
+
+As mentioned on the main page, I'm most proficient with JavaScript and tools within the JavaScript ecosystem - it's what got me into coding and web development. However, I also have experience with many other languages and various tools/toolchains. Below's a _non-comprehensive_ list of what I've worked with in the past, along with my familiarity/proficiency with each.
+
+### Web frameworks
+
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoReact />{" "}
+    <span>
+      <b>React</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiSolid />{" "}
+    <span>
+      <b>Solid</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoVuejs />{" "}
+    <span>
+      <b>Vue</b>: Advanced
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoAngular />{" "}
+    <span>
+      <b>Angular</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiAstro />{" "}
+    <span>
+      <b>Astro</b>: Basic
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoDjango />{" "}
+    <span>
+      <b>Django</b>: Basic
+    </span>
+  </div>
+
+### Mockup tools
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiAdobexd />{" "}
+    <span>
+      <b>Adobe Xd</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoFigma />{" "}
+    <span>
+      <b>Figma</b>: Advanced
+    </span>
+  </div>
+
+### Machine Learning (ML)
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiPytorch />{" "}
+    <span>
+      <b>PyTorch</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiTensorflow />{" "}
+    <span>
+      <b>TensorFlow</b>: Advanced
+    </span>
+  </div>
+
+### Other languages & tooling
+
+- <div className="flex flex-row items-center gap-x-2">
+    <BiLogoPython />{" "}
+    <span>
+      <b>Python</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <Gleam />{" "}
+    <span>
+      <b>Gleam</b>: Advanced
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiElixir />{" "}
+    <span>
+      <b>Elixir</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiCsharp />{" "}
+    <span>
+      <b>C#</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiRust />{" "}
+    <span>
+      <b>Rust</b>: Basic
+    </span>
+  </div>
+
+## DevOps
+
+I have varying levels of experience with creating and designing toolchains and cloud infrastructure. I interact with Linux systems on a daily basis, both at work and at home, where I run a homelab.
+
+While most technologies listed below fall under infrastructure, I also have a deep understanding of/in various DevOps concepts and tools. However, I wanted to keep this list concise, so I've limited myself to the most important things to know.
+
+### OS/kernel technologies
+
+**Note**: I have an advanced to proficient understanding of both operation and architecture of all technologies mentioned in this section.
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiLinux />{" "}
+    <span>
+      <b>UNIX (primarily Linux)</b>
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiWindows />{" "}
+    <span>
+      <b>Windows NT / Server</b>
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiRedhat />{" "}
+    <span>
+      <b>RHEL / Enterprise Linux</b> (non-current RHCSA, 2021)
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiDebian />{" "}
+    <span>
+      <b>Debian-based systems</b>
+    </span>
+  </div>
+
+### Workflow & Virtualisation
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiDocker />{" "}
+    <span>
+      <b>Docker</b>: Proficient (including compose)
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiAnsible />
+    <span>
+      <b>Ansible</b>: Advanced
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <span>
+      <b>KVM</b>: Advanced
+    </span>
+  </div>
+
+## Creative
+
+I've had brief stints in the creative industry, doing VFX and animation work at various internships and part-time jobs. As a result, I've picked up a decent amount of experience working with tools like Unreal Engine and Autodesk Maya.
+
+I'm also a hobbyist video editor, and I'm very proficient with popular NLEs (i.e. Adobe Premiere Pro).
+
+### Graphics Simulation
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiAutodesk />{" "}
+    <span>
+      <b>Autodesk Maya</b>: Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiUnrealengine />{" "}
+    <span>
+      <b>Unreal Engine (4/5)</b>: Advanced
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiBlender />{" "}
+    <span>
+      <b>Blender</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiUnity />{" "}
+    <span>
+      <b>Unity Engine</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <SiGodotengine />{" "}
+    <span>
+      <b>Godot</b>: Basic
+    </span>
+  </div>
+
+### Video editing software
+
+- <div className="flex flex-row items-center gap-x-2">
+    <SiAdobepremierepro />{" "}
+    <span>
+      <b>Adobe Premiere Pro</b>: Advanced/Proficient
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiSolidVideo />{" "}
+    <span>
+      <b>DaVinci Resolve</b>: Moderate
+    </span>
+  </div>
+- <div className="flex flex-row items-center gap-x-2">
+    <BiSolidVideo />{" "}
+    <span>
+      <b>Avid Media Composer</b>: Basic
+    </span>
+  </div>

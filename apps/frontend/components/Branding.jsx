@@ -31,13 +31,13 @@ export const NavBrand = ({ corner }) => (
 
 export const CornerBrand = () => (
     <span className="group ttransition-all ease-in-out duration-300 font-semibold text-purple-500">
-        the corner*
+        corner*
     </span>
 );
 
 export const FooterBrand = () => (
     <Link href="https://github.com/daniwasonline/website" target="_blank" rel="noreferrer noopener" className="font-semibold hover:text-slate-300">
-        open source<span className="text-purple-600 font-bold">*</span>
+        dani<span className="text-purple-600 font-bold">*</span>
     </Link>
 );
 

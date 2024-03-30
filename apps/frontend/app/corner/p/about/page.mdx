@@ -1,15 +1,58 @@
-import { Head } from "@std/components/Corner/Post";
+import {
+  Head,
+  Subpages,
+  SubpageLink,
+  SubpageSelected,
+} from "@std/components/Corner/Post";
 import { CornerBrand } from "@std/components/Branding";
 import { NameBrand } from "@std/components/Branding";
+import { BiLogoReact } from "react-icons/bi";
+
 export const context = {
   title: "about me",
   author: "Dani",
-  description: "An introduction to this part of the internet.",
+  description: "Howdy there!",
   timestamp: "2024-03-28",
   integral: true,
   hidden: true,
 };
 
-<Head {...context} />
+export const metadata = {
+  title: context?.title + " - dani's corner",
+  description: context?.description,
+};
 
-Howdy! I'm <NameBrand />. I hold many hats, but I'm primarily a web designer and a DevOps Engineer.
+<Head {...context} />
+<Subpages>
+  <SubpageSelected>general</SubpageSelected>
+  <SubpageLink parent="about" slug="clients">
+    for clients
+  </SubpageLink>
+  <SubpageLink parent="about" slug="experience">
+    experience
+  </SubpageLink>
+</Subpages>
+
+Howdy! My name's <NameBrand />. In my free time, I work as a web developer and UI designer, although I have experience across the board when it comes to tech. I work with various clients and businesses to design and develop for the web.
+
+## my skills!
+
+As I said above, I have varying levels of experience across the board when it comes to tech. I have two strong suits, though: engineering/dev and DevOps (including infrastructure).
+
+### dev & engineering
+
+As a developer (in web and in general), I've got a few programming languages under my belt.
+
+First and foremost: I'm proficient in writing JavaScript/(some) TypeScript, and it's what got me into coding. I've both played with and used many web frameworks, such as:
+
+- **Vue** (Nuxt is awesome!)
+- **Astro**, which is extremely fast and awesome to work with
+- **React** is the framework that I'm most proficient with. _This site_ is built on top of Next.js, a React SSR framework!
+
+Outside of JavaScript, I'm also fluent in Python; I've worked a few gigs related to machine learning (ML) in the past, so learning how to use Python (including PyTorch and TensorFlow) was essential. I'm also okay at writing Go, Elixir, and [Gleam](https://gleam.run) code.
+
+## other things
+
+Other than tech, I juggle school and a full-time job: I'm currently pursuing an engineering degree to eventually become a transport planner. I've always had an interest in transit infrastructure and my ultimate aspiration is to take part in this process and help make key decisions in tomorrow's future in transportation.
+
+When I'm relaxing, I'm generally stuffing my head in a book, tinkering with my homelab, or playing video games with friends. Right now, I'm really getting back into Cities: Skylines and I've recently done a replay of Hogwarts Legacy. I also love to travel and do recreational sport - being on a kayak or hiking out in the back country usually helps me escape from my swamp of work and studies.

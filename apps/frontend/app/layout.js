@@ -1,6 +1,6 @@
 import './globals.css'
 import { Fredoka, Golos_Text, Inter, IBM_Plex_Mono, Outfit, Rubik } from 'next/font/google'
-import { ThemeProvider } from '@std/app/Client';
+import { ProgressBar, ThemeProvider } from '@std/app/Client';
 import { AiFillWarning } from 'react-icons/ai';
 
 const inter = Inter({ subsets: ['latin'], variable: "--var-inter", display: "swap" })
@@ -11,12 +11,12 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-    title: '2off',
-    description: 'i\'m a web designer!',
+    title: 'dani',
+    description: 'i design and develop websites and apps for the modern web.',
 };
 
 export const viewpoint = {
-    themeColor: "#bd85ff"
+    themeColor: "#9035ee"
 };
 
 import Layout from "@std/components/Layout";
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
                         <NavigationRoot>
                             <NavMusic />
                         </NavigationRoot>
-                        <div className="relative flex flex-col min-h-[90vh] py-8 h-full">
+                        <div className="relative flex flex-col min-h-[92vh] py-8 h-full">
                             <Layout>
                                 {children}
                             </Layout>
@@ -46,6 +46,11 @@ export default function RootLayout({ children }) {
                             </div>
                         </div>
                     </div>
+                    <ProgressBar
+                        color="#884be2"
+                        height="4px"
+                        shallowRouting
+                    />
                 </ThemeProvider>
             </body>
         </html>
