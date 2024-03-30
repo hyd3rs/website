@@ -15,7 +15,7 @@ export const metadata = {
     description: 'i design and develop websites and apps for the modern web.',
 };
 
-export const viewpoint = {
+export const viewport = {
     themeColor: "#9035ee"
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <body className={`${outfit.variable} ${inter.variable} ${fredoka.variable} ${ibmPlexMono.variable} font-sans`}>
-                <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+                <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
                     <div className="hidden flex-row items-center gap-x-2 w-full p-2 bg-red-400 font-medium font-fredoka lg:text-2xl">
                         <AiFillWarning className="text-6xl lg:text-3xl text-white" />
                         <span className="text-white">Howdy there! Light mode is currently a huge mess and an eyesore. Do pardon the mess, you should probably go back to dark mode.</span>
