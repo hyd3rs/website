@@ -12,7 +12,5 @@ This one took much longer than any of my previous ones - I've been sitting on th
 
 If I remember, I'll update this README with a link to that when I've written it.
 
-(I also need to finish the about page, but I can do that later.)
-
 ## Credits
 - **Inspiration**: [Andrea](https://avris.it). I stumbled across their website a few months ago and randomly thought about creating my own CMS/blog - this ended up turning into **the corner**!

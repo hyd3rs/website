@@ -1,13 +1,17 @@
 import { Head } from "@std/components/Corner/Post";
 import { CornerBrand } from "@std/components/Branding";
+import { assembleMetadata } from "@std/components/Corner/utils";
 export const context = {
   title: "welcome to my corner!",
   author: "Dani",
   description: "Welcome to my humble abode. :)",
   timestamp: "2024-03-28",
+  updated: "2024-04-07",
   tags: ["meta"],
   hidden: false,
 };
+
+export const metadata = assembleMetadata(context);
 
 <Head {...context} />
 

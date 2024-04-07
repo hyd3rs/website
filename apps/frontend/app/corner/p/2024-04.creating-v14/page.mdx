@@ -1,0 +1,17 @@
+import { Head } from "@std/components/Corner/Post";
+import { CornerBrand } from "@std/components/Branding";
+import { assembleMetadata } from "@std/components/Corner/utils";
+export const context = {
+    title: "creating danny.works",
+    author: "Dani",
+    description: "How I created this website, and my addiction to rebuilding it.",
+    timestamp: "2024-04-07",
+    tags: ["dev log"],
+    hidden: true,
+};
+
+export const metadata = assembleMetadata(context);
+
+<Head {...context} />
+
+I dipped my head into the world of web design five or six years ago, *looong* before I started using any modern web framework. It was just HTML, CSS, and JS.

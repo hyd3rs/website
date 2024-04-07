@@ -7,20 +7,19 @@ import {
 import { CornerBrand } from "@std/components/Branding";
 import { NameBrand } from "@std/components/Branding";
 import { BiLogoReact } from "react-icons/bi";
+import { assembleMetadata } from "@std/components/Corner/utils";
 
 export const context = {
   title: "about me",
   author: "Dani",
   description: "Howdy there!",
   timestamp: "2024-03-30",
+  updated: "2024-04-07",
   integral: true,
   hidden: true,
 };
 
-export const metadata = {
-  title: context?.title + " - dani's corner",
-  description: context?.description,
-};
+export const metadata = assembleMetadata(context);
 
 <Head {...context} />
 <Subpages>
@@ -39,7 +38,7 @@ Howdy! My name's <NameBrand />. In my free time, I work as a web developer and U
 
 As I said above, I have varying levels of experience across the board when it comes to tech. I have two strong suits, though: engineering/dev and DevOps (including infrastructure).
 
-### dev & engineering
+### software engineering
 
 As a developer (in web and in general), I've got a few programming languages under my belt.
 
@@ -51,8 +50,16 @@ First and foremost: I'm proficient in writing JavaScript/(some) TypeScript, and 
 
 Outside of JavaScript, I'm also fluent in Python; I've worked a few gigs related to machine learning (ML) in the past, so learning how to use Python (including PyTorch and TensorFlow) was essential. I'm also okay at writing Go, Elixir, and [Gleam](https://gleam.run) code.
 
+### dev-ops & infrastructure
+
+In addition to my software engineering experience, I have vast experience with Linux (on the server, on an embedded device, and on the desktop), and I've obtained various qualifications and certifications in the past. I'm most familiar with RHEL and its' derivative distributions (Enterprise Linux, including Rocky Linux, the late CentOS, and AlmaLinux), although I'm comfortable with other Linux ecosystems and UNIX systems in general.
+
+I'm ___extremely familiar___ with OCI as well, as I regularly interact with Docker at work and Podman with my homelab. It's my preferred way to quickly spin up a developer environment for testing (or for production use in general)!
+
+Outside of Linux and distributions, I have tonnes experience working with general DevOps; this includes CI/CD (i.e. Jenkins, TeamCity, Travis CI, GitHub/GitLab Actions) and creating custom tools to leverage within the developer environment. I've previously architected various custom solutions to decrease as much developer friction as possible - I usually write these tools in Python, though I also turn to Go when I need to squeeze out efficiency (whilst still being able to prototype fast).
+
 ## other things
 
-Other than tech, I juggle school and a full-time job: I'm currently pursuing an engineering degree to eventually become a transport planner. I've always had an interest in transit infrastructure and my ultimate aspiration is to take part in this process and help make key decisions in tomorrow's future in transportation.
+Other than tech, I juggle school and a full-time job: I'm currently pursuing an engineering degree to eventually become a transport planner. I've always had an interest in public transit infrastructure. My ultimate aspiration is to take part in this process and help make key decisions in tomorrow's future in transportation.
 
 When I'm relaxing, I'm generally stuffing my head in a book, tinkering with my homelab, or playing video games with friends. Right now, I'm really getting back into Cities: Skylines and I've recently done a replay of Hogwarts Legacy. I also love to travel and do recreational sport - being on a kayak or hiking out in the back country usually helps me escape from my swamp of work and studies.
