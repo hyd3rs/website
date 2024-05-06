@@ -10,7 +10,9 @@
     ],
     "scripts": {
         "build": "turbo build --remote-cache-read-only=true",
-        "build:remote": "turbo build --remote-cache-read-only=false"
+        "build:remote": "turbo build --remote-cache-read-only=false",
+        "dev": "turbo dev",
+        "dev:turbo": "turbo dev:turbo"
     },
     "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781"
 }
