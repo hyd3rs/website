@@ -56,7 +56,7 @@ export const CornerBrand = () => (
 
 export const FooterBrand = () => (
   <Link
-    href="https://github.com/daniwasonline/website"
+    href="https://github.com/hyd3rs/website"
     target="_blank"
     rel="noreferrer noopener"
     className="font-semibold hover:text-slate-300"
