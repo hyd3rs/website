@@ -16,11 +16,11 @@ import { NameBrand, NavTitle } from "@std/components/Branding";
 
 export const NavigationRoot = ({ children }) => {
   return (
-    <div className="flex flex-row items-center w-full z-[2]">
-      <div className="hidden md:flex flex-row items-center z-[10]">
+    <div className="flex flex-row items-center w-full z-2">
+      <div className="hidden md:flex flex-row items-center z-10">
         <TabsDrawer />
       </div>
-      <nav className="flex items-center justify-between w-full px-8 md:pl-6 sm:pr-12 z-[10]">
+      <nav className="flex items-center justify-between w-full px-8 md:pl-6 sm:pr-12 z-10">
         <div className="flex items-center justify-between">
           <NavTitle />
         </div>

@@ -16,7 +16,7 @@ export const TabCard = ({ title, children, className, href, icon, midHover, setO
                         {children}
                     </span>
                 </div>
-                <div className={`hidden md:flex group -z-[100] absolute top-0 left-0 w-12 h-12 ${midHover ? `md:group-hover:w-48` : "md:group-hover:w-80"} md:group-hover:h-24 ease-in-out duration-500 rounded-2xl drop-shadow-2xl border-2 bg-transparent text-black dark:text-white ${className || "bg-purple-900 border-purple-900 md:group-hover:bg-purple-900"}`}>
+                <div className={`hidden md:flex group -z-100 absolute top-0 left-0 w-12 h-12 ${midHover ? `md:group-hover:w-48` : "md:group-hover:w-80"} md:group-hover:h-24 ease-in-out duration-500 rounded-2xl drop-shadow-2xl border-2 bg-transparent text-black dark:text-white ${className || "bg-purple-900 border-purple-900 md:group-hover:bg-purple-900"}`}>
                     <div className="md:group-hover:opacity-0 ease-in-out duration-200 w-full h-full flex justify-center items-center">
                         <Icon className="text-center text-2xl" />
                     </div>

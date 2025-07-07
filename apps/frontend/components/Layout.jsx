@@ -14,7 +14,7 @@ import { SiCodeberg } from "react-icons/si";
 export default async function BasePage({ children }) {
   return (
     <div className="flex flex-col gap-y-8 md:gap-y-0 h-full">
-      <main className="z-[0] md:px-6 flex flex-col items-start rounded-t-xl text-left w-full h-full pt-4 amd:py-4 transition-transform ease-in-out duration-250">
+      <main className="z-0 md:px-6 flex flex-col items-start rounded-t-xl text-left w-full h-full pt-4 amd:py-4 transition-transform ease-in-out duration-250">
         {children}
       </main>
     </div>

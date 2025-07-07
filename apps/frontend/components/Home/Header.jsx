@@ -16,7 +16,7 @@ export const MainContent = () => (
             hi, i&apos;m {" "}
             <NameBrand />.
         </span>
-        <span className="text-4xl font-medium sm:max-w-[40rem]">
+        <span className="text-4xl font-medium sm:max-w-160">
             i design and develop websites and apps for the modern web.
         </span>
         <Interactables />
@@ -29,7 +29,7 @@ export const BigBook = () => (
             <div className="-mr-16 mt-8 absolute top-0 right-0 animate-pulse text-purple-500 font-bold md:text-[5rem] lg:text-[8rem] rounded-full">
                 *
             </div>
-            <span className="text-slate-800 dark:text-purple-400 rotate-[15deg] md:text-[8rem] lg:text-[12rem] xl:text-[16rem] font-bold">d</span>
+            <span className="text-slate-800 dark:text-purple-400 rotate-15 md:text-[8rem] lg:text-[12rem] xl:text-[16rem] font-bold">d</span>
         </div>
     </div>
 );

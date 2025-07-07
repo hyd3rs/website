@@ -3,7 +3,7 @@ import { BiLink, BiMailSend } from 'react-icons/bi';
 
 export const HydrideBox = () => {
     return (
-        <GradientBox className={`bg-gradient-to-tr bg-gradient-hydride-brand`} title={
+        <GradientBox className={`bg-linear-to-tr bg-gradient-hydride-brand`} title={
             <>
                 the <span className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-hydride-brand">hydride collective</span>
             </>
@@ -23,7 +23,7 @@ export const HydrideBox = () => {
 
 export const FreelanceBox = () => {
     return (
-        <GradientBox className={`bg-gradient-to-tr bg-gradient-hydride-brand`} title={
+        <GradientBox className={`bg-linear-to-tr bg-gradient-hydride-brand`} title={
             <>
                 hire my <span className="dark:text-transparent dark:bg-clip-text dark:bg-gradient-hydride-brand">freelance</span> work!
             </>

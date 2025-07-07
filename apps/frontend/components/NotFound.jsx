@@ -7,7 +7,7 @@ export const NotFoundText = () => (
         <span className="text-4xl font-medium">
             the page that you&apos;re looking for doesn&apos;t exist!
         </span>
-        <span className="text-2xl max-w-[35rem]">
+        <span className="text-2xl max-w-140">
             try checking if the URL that you&apos;re navigating to is correct.
         </span>
     </>

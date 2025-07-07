@@ -15,7 +15,7 @@ export const StandardButtonLink = ({ children, href, external, className, icon }
 
 export const InactiveButton = ({ children, className, icon }) => {
     return (
-        <Button variant="outline" className={`${className} ${icon ? "text-4xl w-12 h-12 p-2" : "px-4 py-5 text-xl"} cursor-default ease-in-out duration-300 rounded-2xl border-2 border-transparent text-white hover:text-white bg-slate-800 hover:bg-slate-800 hover:dark:bg-purple-900 dark:bg-purple-900 font-medium`}>
+        <Button variant="outline" className={`${className} ${icon ? "text-4xl w-12 h-12 p-2" : "px-4 py-5 text-xl"} cursor-default ease-in-out duration-300 rounded-2xl border-2 border-transparent text-white hover:text-white bg-slate-800 hover:bg-slate-800 dark:hover:bg-purple-900 dark:bg-purple-900 font-medium`}>
             {children}
         </Button>
     );
