@@ -7,20 +7,12 @@ const nextConfig = {
   // Optionally, add any other Next.js config below
   experimental: {
     mdxRs: true,
-    turbo: {
-      /*rules: {
+  },
+  turbopack: {
+    /*rules: {
         "*.mdx": ["@mdx-js/loader"],
       },*/
-      resolveExtensions: [
-        ".mdx",
-        ".tsx",
-        ".ts",
-        ".jsx",
-        ".js",
-        ".mjs",
-        ".json",
-      ],
-    },
+    resolveExtensions: [".mdx", ".tsx", ".ts", ".jsx", ".js", ".mjs", ".json"],
   },
 };
 

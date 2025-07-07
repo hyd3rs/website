@@ -1,60 +1,60 @@
 import {
-    Head,
-    Subpages,
-    SubpageLink,
-    SubpageSelected,
+  Head,
+  Subpages,
+  SubpageLink,
+  SubpageSelected,
 } from "@std/components/Corner/Post";
 import { CornerBrand } from "@std/components/Branding";
 import { NameBrand } from "@std/components/Branding";
 import {
-    BiLogoJavascript,
-    BiLogoPython,
-    BiLogoGoLang,
-    BiLogoReact,
-    BiLogoVuejs,
-    BiLogoAngular,
-    BiLogoFigma,
-    BiLogoDjango,
-    BiSolidVideo
+  BiLogoJavascript,
+  BiLogoPython,
+  BiLogoGoLang,
+  BiLogoReact,
+  BiLogoVuejs,
+  BiLogoAngular,
+  BiLogoFigma,
+  BiLogoDjango,
+  BiSolidVideo,
+  BiLogoWindows
 } from "react-icons/bi";
 import {
-    SiSolid,
-    SiAdobexd,
-    SiRust,
-    SiElixir,
-    SiAstro,
-    SiCsharp,
-    SiUnrealengine,
-    SiUnity,
-    SiGodotengine,
-    SiAutodesk,
-    SiBlender,
-    SiPytorch,
-    SiTensorflow,
-    SiAdobepremierepro,
-    SiLinux,
-    SiRedhat,
-    SiDebian,
-    SiDocker,
-    SiAnsible,
-    SiWindows,
+  SiSolid,
+  SiAdobexd,
+  SiRust,
+  SiElixir,
+  SiAstro,
+  SiUnrealengine,
+  SiUnity,
+  SiGodotengine,
+  SiAutodesk,
+  SiBlender,
+  SiPytorch,
+  SiTensorflow,
+  SiAdobepremierepro,
+  SiLinux,
+  SiRedhat,
+  SiDebian,
+  SiDocker,
+  SiAnsible,
 } from "react-icons/si";
+import { PiFileCSharp } from "react-icons/pi";
 import { Gleam } from "./Client";
 
 export const context = {
-    title: "my experience",
-    author: "Dani",
-    description:
-        "A non-exhaustive list of technologies and software that I've worked with.",
-    timestamp: "2024-03-30",
-    parent: "about",
-    integral: true,
-    hidden: true,
+  title: "my experience",
+  author: "Dani",
+  description:
+    "A non-exhaustive list of technologies and software that I've worked with.",
+  timestamp: "2024-03-30",
+  parent: "about",
+  integral: true,
+  hidden: true,
 };
 
 export const metadata = {
-    title: context?.title + " - dani's corner",
-    description: context?.description,
+  title: context?.title + " - dani's corner",
+  description: context?.description,
 };
 
 <Head {...context} />
@@ -168,7 +168,7 @@ As mentioned on the main page, I'm most proficient with JavaScript and tools wit
     </span>
   </div>
 - <div className="flex flex-row items-center gap-x-2">
-    <SiCsharp />{" "}
+    <PiFileCSharp />{" "}
     <span>
       <b>C#</b>: Moderate
     </span>
@@ -197,7 +197,7 @@ While most technologies listed below fall under infrastructure, I also have a de
     </span>
   </div>
 - <div className="flex flex-row items-center gap-x-2">
-    <SiWindows />{" "}
+    <BiLogoWindows />{" "}
     <span>
       <b>Windows NT / Server</b>
     </span>
