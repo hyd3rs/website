@@ -1,0 +1,52 @@
+import { Head } from "@std/components/Corner/Post";
+import { CornerBrand } from "@std/components/Branding";
+import { assembleMetadata } from "@std/components/Corner/utils";
+export const context = {
+  title: "meta update: mid-2025",
+  author: "Dani",
+  description: "A quick update on my projects, including this website.",
+  timestamp: "2025-07-07",
+  tags: ["meta"],
+  hidden: false,
+};
+
+export const metadata = assembleMetadata(context);
+
+<Head {...context} />
+
+'Howdy howdy! It's been a while since I [last updated this website](https://github.com/hyd3rs/website/commit/b5c18aba7fea20e41ee6ccdde71064372f71ee6f). In all fairness, I haven't really had an immediate need to update it *at all*, but that's changing as of this week!
+
+In this post, I'll explain what's changing on this website, as well as some updates on where *I've* been. I'll also plug a list of OSS (and some non-OSS) projects that I've been tracking in my free-time at the end. (;
+
+## where have you been?
+Life got busy. I won't get too much into detail, but a mix of work, my studies, and personal things have led to me more-or-less dropping off the face of the earth in respect to my activity in the OSS world. 
+
+With that being said, I *have* been actively contributing to a few open-source projects over the past year, just under anonymity for reasons related to my NDA and other agreements with my employer. Can't talk too much about that, but it's exciting stuff!
+
+## whoa, different domain? new website?
+**yep!** You might've already noticed, but my website now points to [hyders.dev](https://www.hyders.dev). This is in line with a rebrand that I'm doing in order to "merge" my professional and enthusiast identities together; `hyders` is my main handle in the "corpo world", and I wanted to move my personal accounts to match. I also spell my name differently nowadays, so this partially gets rid of the confusion some of my new clients have with my name.
+
+As for the website--no, this is here to stay. That's not to say that a v14 *isn't* in order, but that won't come for quite a while. Like I said, I've been extremely busy over the past year-and-change, so I simply haven't had the time to redesign this whole thing. And, besides, I still adore the whole thing going on here, so why should I change it anyway?
+
+I'll probably add a few things to the website in the near future, including a personal portfolio--the Hydride portfolio is ***very much out of date*** as of right now, and I've also embarked on a few projects outside of Hydride that I feel are worth talking about. For now, that's coming soon™.
+
+## share your projects!!
+As for now, the main thing I'm working on is [Swapper](https://github.com/hyd3rs/swapper). It's an API designed to target an extremely niche case: *swapping* USB devices between virtual machines on hypervisor running Proxmox with ease. That's a mouthful, I know, but it basically helps with running virtual machines on your personal PC with a single graphics card--sort of like a very overkill dual-boot. It's a massive necessity for me, as someone who runs this sort of Proxmox setup with *many* virtual machines that require native GPU passthrough. I'll probably write a deep-dive or some other thing on it in the future, so stay tuned!
+
+## what's your OSS list?
+
+Finally, onto the last part of this post: a list of OSS projects I've been keeping an eye on. There's no general theme to these: I look, go *ooooo this very cool me likey!!!*, and star it on GitHub / save it to my bookmarks. So here we go:
+
+- [**Zen**](https://github.com/zen-browser/desktop): Essentially Arc, but open-source, cross-platform, and none of the BS. No AI features and better performance, in my own experience. It's based on Firefox / Gecko, so YMMV. I'm on Arc at the moment, but I'm jumping ship as soon as [sidebar folders are added](https://github.com/zen-browser/desktop/pull/9355).
+- [**Anytype**](https://github.com/anyproto/anytype-ts): Notion, but open-source and decentralised. I adopted Anytype back in May, when I was *very dangerously close* to hitting the limits of my free account on Notion. It's pretty polished, has a relatively advanced database system, and has most of the same ergonomics as Notion. Me likey, me use-y.
+- [**LangChain**](https://github.com/langchain-ai/langchain): While I'm usually skeptical of LLM-centric projects, this one's been on my radar for over a year now. It's a framework that makes using LLMs and bridging them with agents and tools *so much easier*. I've used both the Python and the TypeScript/JS bindings and it's super fun to play with!
+- [**Komodo**](https://github.com/moghtech/komodo): Imagine Portainer, but *better*. That's basically what Komodo is. It's missing a few advanced features from Portainer, but IMO it's so much more performant and stable. I have it deployed in production for several projects, as well as for my homelab. If you're using Portainer right now, check it out!
+- [**Awesome - macOS**](https://github.com/jaywcjlove/awesome-mac): This one's a bit different, being a compilation rather than an actual OSS project. But the Awesome GitHub repositories--especially the ones for self-hosted and Mac--are super useful! I've been scrolling them to find new software to use or to add to my homelab. Check them out--there's an Awesome repository for more-or-less anything with a community.
+
+Those are but a few projects that I've kept my eye on over the past year or so. I began tracking most of these simply through their repositories, then eventually adopting them after a while of lurking. Again, these are pretty cool - I encourage y'all to take a look at these and try 'em out!
+
+## what's next? what about the corner?
+
+**welp, that's pretty much it for this one.** I have my work cut out for me until at least half-way through next year, so I dunno when I'll return. We'll see.
+
+As for the corner: I have a lot that I'd like to share! A few deep-dives, new projects I'm working on here-and-there, and maybe sharing more OSS projects that I find interesting. (Hopefully!) I'll have time to share it with y'all soon!!
