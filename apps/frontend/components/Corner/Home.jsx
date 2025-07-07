@@ -51,7 +51,7 @@ export const Post = ({
   );
   return (
     <Link href={`/corner/p/${slug || "#"}`}>
-      <Card className="group ease-in-out duration-300 rounded-2xl border-2 text-black dark:text-white border-slate-800 hover:bg-slate-800 dark:border-purple-900 dark:hover:bg-purple-900 hover:text-white bg-transparent font-medium">
+      <Card className="group ease-in-out duration-300 rounded-2xl border-2 text-black dark:text-white border-slate-800 hover:bg-slate-800 dark:border-purple-900 dark:hover:bg-purple-900 hover:text-white bg-transparent font-medium h-full flex flex-col justify-center">
         <CardHeader>
           <CardTitle>
             <div className="flex flex-row items-center gap-x-2">
@@ -72,7 +72,7 @@ export const Post = ({
               <span>
                 {" "}
                 |{" "}
-                <span className="uppercase font-medium tracking-widest text-purple-800 dark:text-purple-500 group-hover:dark:text-white">
+                <span className="uppercase font-medium tracking-widest text-purple-800 dark:text-purple-500 dark:group-hover:text-white">
                   {tags?.join(", ")}
                 </span>
               </span>
