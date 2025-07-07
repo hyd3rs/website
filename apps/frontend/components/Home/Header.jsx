@@ -52,7 +52,7 @@ export const NavigationRow = () => (
     </HeaderLink>
     <HeaderLink href="/corner" className="flex flex-row items-center gap-x-2">
       <BiSolidBook className="hidden lg:inline-block" />
-      my corner (a blog??)
+      corner (blog)
     </HeaderLink>
   </>
 );
@@ -62,7 +62,7 @@ export const Interactables = () => (
     <div className="flex flex-row items-center gap-x-4">
       <NavigationRow />
     </div>
-    <div className="grid grid-cols-5 gap-4 w-fit">
+    <div className="flex flex-row sm:grid sm:grid-cols-5 gap-4 w-fit">
       <Links />
     </div>
   </div>

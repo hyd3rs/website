@@ -26,7 +26,7 @@ export const Links = (props) => {
     <>
       <StandardButtonLink
         icon
-        href="mailto:hello@danny.works"
+        href="mailto:hello@hyders.dev"
         external
         {...props}
       >
@@ -34,7 +34,7 @@ export const Links = (props) => {
       </StandardButtonLink>
       <StandardButtonLink
         icon
-        href="https://github.com/daniwasonline"
+        href="https://github.com/hyd3rs"
         external
         {...props}
       >
@@ -42,7 +42,7 @@ export const Links = (props) => {
       </StandardButtonLink>
       <StandardButtonLink
         icon
-        href="https://codeberg.org/daniaintonline"
+        href="https://codeberg.org/hyd3rs"
         external
         {...props}
       >
