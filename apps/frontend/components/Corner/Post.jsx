@@ -108,7 +108,7 @@ export const Head = ({
           {updated ? <>(last updated {formattedUpdated})</> : ""}
         </span>
       </div>
-      <span className="tracking-wide text-xl md:text-xl font-normal text-gray-200 xl:max-w-[45vw] 2xl:max-w-[33vw]">
+      <span className="tracking-wide text-xl md:text-xl font-normal text-gray-800 dark:text-gray-200 xl:max-w-[45vw] 2xl:max-w-[33vw]">
         {description}
       </span>
       <div className="mt-2 mb-4 py-1 w-full h-1 bg-purple-950 rounded-full sm:max-w-[50vw] xl:max-w-[45vw] 2xl:max-w-[32.5vw]" />

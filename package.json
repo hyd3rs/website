@@ -9,9 +9,12 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "turbo build --remote-cache-read-only=true",
-    "build:remote": "turbo build --remote-cache-read-only=false",
-    "dev": "turbo dev"
+    "dev": "yarn r:dev",
+    "build": "yarn r:build",
+    "build:remote": "yarn r:build:remote",
+    "r:build": "turbo build --remote-cache-read-only=true",
+    "r:build:remote": "turbo build --remote-cache-read-only=false",
+    "r:dev": "turbo dev"
   },
   "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781",
   "devDependencies": {
